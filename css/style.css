@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background: linear-gradient(197deg, rgba(205, 88, 48, 1) 0%, rgba(138, 1, 59, 1) 13%, rgba(136, 8, 8, 1) 18%, rgba(0, 0, 0, 1) 35%) !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+body {
+    background-color: transparent !important;
+}
+
+span {
+    color: #fff !important;
+    font-weight: 100;
+}
+
+p {
+    color: #fff !important;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    width: 17vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px #000;
+    font-weight: bold;
+    border-radius: 14px;
+}
+
+
+.input_all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background: #353535;
+    border: 1px solid #353535;
+    border-radius: 6px;
+    width: 100%;
+    height: 3vh;
+    margin-block: 4px;
+}
+
+input[type='checkbox'] {
+    width: 8%;
+    color: #000;
+    height: 2vh;
+}
+
+.check-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+}
+
+label {
+    font-weight: 100;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 9px;
+    /* margin-left: 38vh; */
+}
+.btn{
+    background: linear-gradient(270deg, rgba(205,88,48,1) 0%, rgba(182,0,77,1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    border: 0;
+    width: 15vw;
+    height: 5vh;
+    font-size: 23px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.h-1 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg, rgba(237, 114, 32, 1) 0%, rgba(209, 0, 106, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.h-5{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    
+}
+
+.li_nav {
+    margin-left: 50px;
+}
+
+.a_nav {
+    display: block;
+    padding: .5rem;
+}
+
+
+.general {
+    display: flex;
+    flex-direction: column;
+}
+
+.mynavbar {
+    padding-top: 20px;
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+}
+
+.nav-items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+#logo {
+    max-width: 200px;
+}
+
+.paragraph {
+    font-size: 14px;
+    padding: 1em;
+    font-weight: 100;
+
+}
+.termos{
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(40deg, #FF006C 14%, #FF622C 64%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(40deg, #FF006C 14%, #FF622C 64%);
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
