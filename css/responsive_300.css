@@ -1,0 +1,59 @@
+@media only screen and (max-width: 375px) {
+    .container {
+        margin-top: 17vh;
+    }
+
+    .Mynavbar {
+        padding-top: 20px;
+        height: 77px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        width: 100%;
+    }
+
+    #menu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 0.6s;
+        z-index: 1000;
+        align-items: center;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .h-1 {
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    #logo {
+        max-width: 16vh;
+    }
+
+    .container {
+        width: 68vw;
+    }
+
+    .btn {
+        width: 62vw;
+        height: 5vh;
+        font-size: 22px;
+    }
+
+    input {
+        height: 4vh;
+    }
+
+    .paragraph {
+        font-size: 12px;
+        padding: 1em;
+        font-weight: 100;
+    }
+}
