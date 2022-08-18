@@ -43,7 +43,7 @@ a {
     display: flex;
     align-items: center;
     background-color: #181818;
-    width: 17vw;
+    /* width: 17vw; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 22vh;
@@ -100,7 +100,7 @@ label {
     color: #fff;
     border-radius: 50px;
     border: 0;
-    width: 15vw;
+    width: 11vw;
     height: 5vh;
     font-size: 23px;
     font-weight: 600 !important;
