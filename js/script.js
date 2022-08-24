@@ -55,6 +55,6 @@ function showTooltip() {
   tooltip.style.top = `${(100 / (spans.length * 2)) * (tooltipIndex * 2 + 1)}%`;
 }
 
-tooltip_elements.forEach((elem) => {
-  elem.addEventListener("mouseover", showTooltip);
-});
+// tooltip_elements.forEach((elem) => {
+//   elem.addEventListener("mouseover", showTooltip);
+// });
