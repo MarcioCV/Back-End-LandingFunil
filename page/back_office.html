@@ -1,163 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href='../img/icon/logorenda.svg'>
-    <link rel="stylesheet" href="../page/css/dashbord.css">
-    <title> Menu Dashboard</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href='../img/icon/logorenda.svg'>
+        <link rel="stylesheet" href="../sass/css/dashbord.css">
+        <title>Side Bar Responsivo</title>
+    </head>
 </head>
-
 <body>
-    <nav>
-        <div class="sidebar-top">
-            <span class="shrink-btn">
-                <i class='bx bx-chevron-left'></i>
-            </span>
-            <img src="../img/rendainfinitanovalogo.svg" class="logo" alt="">
-            <h3 class="hide">DEV SCHOOL</h3>
+    
+    <div class="sidebar">
+        <div class="logoContent">
+            <div class="logo">
+                <i class='bx bxl-nodejs'></i>
+                <div class="logoName">Bruno Salmito</div>
+            </div>
+            <!-- logo -->
+            <i class='bx bx-menu' id="btn"></i>
         </div>
+        <!-- logoContent -->
+        <ul class="nav_list">
 
-        <div class="search">
-            <i class='bx bx-search'></i>
-            <input type="text" class="hide" placeholder="Quick Search ...">
-        </div>
+            <!-- <li>
+                <i class='bx bx-search' ></i>
+                <input type="search" name="search" placeholder="Procurar...">
+                <span class="toolipe">Procurar</span>
+            </li> -->
 
-        <div class="sidebar-links">
-            <ul>
-                <div class="active-tab"></div>
-                <li class="tooltip-element" data-tooltip="0">
-                    <a href="../html/back_office.html" class="active" data-active="0">
-                        <div class="icon">
-                            <i class='bx bx-tachometer'></i>
-                            <i class='bx bxs-tachometer'></i>
-                        </div>
-                        <span class="link hide">Dashboard</span>
-                    </a>
-                </li>
-                <li class="tooltip-element" data-tooltip="1">
-                    <a href="../page/dados.html" data-active="1">
-                        <div class="icon">
-                            <i class='bx bx-folder'></i>
-                            <i class='bx bxs-folder'></i>
-                        </div>
-                        <span class="link hide">Meus Dados</span>
-                    </a>
-                </li>
-                <li class="tooltip-element" data-tooltip="2">
-                    <a href="../page/leads.html" data-active="2">
-                        <div class="icon">
-                            <i class='bx bx-message-square-detail'></i>
-                            <i class='bx bxs-message-square-detail'></i>
-                        </div>
-                        <span class="link hide">Meus Leads</span>
-                    </a>
-                </li>
-                <li class="tooltip-element" data-tooltip="3">
-                    <a href="#" data-active="3">
-                        <div class="icon">
-                            <i class='bx bx-bar-chart-square'></i>
-                            <i class='bx bxs-bar-chart-square'></i>
-                        </div>
-                        <span class="link hide">Analytics</span>
-                    </a>
-                </li>
-                <div class="tooltip">
-                    <span class="show">Dashboard</span>
-                    <span>Projects</span>
-                    <span>Messages</span>
-                    <span>Analytics</span>
-                </div>
-            </ul>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Inicio</span>
+                    <span class="toolipe">Inicio</span>
+                </a>
+            </li>
 
-            <h4 class="hide">Shortcuts</h4>
+            
 
-            <ul>
-                <li class="tooltip-element" data-tooltip="0">
-                    <a href="#" data-active="4">
-                        <div class="icon">
-                            <i class='bx bx-notepad'></i>
-                            <i class='bx bxs-notepad'></i>
-                        </div>
-                        <span class="link hide">Tasks</span>
-                    </a>
-                </li>
-                <li class="tooltip-element" data-tooltip="1">
-                    <a href="#" data-active="5">
-                        <div class="icon">
-                            <i class='bx bx-help-circle'></i>
-                            <i class='bx bxs-help-circle'></i>
-                        </div>
-                        <span class="link hide">Help</span>
-                    </a>
-                </li>
-                <li class="tooltip-element" data-tooltip="2">
-                    <a href="#" data-active="6">
-                        <div class="icon">
-                            <i class='bx bx-cog'></i>
-                            <i class='bx bxs-cog'></i>
-                        </div>
-                        <span class="link hide">Settings</span>
-                    </a>
-                </li>
-                <div class="tooltip">
-                    <span class="show">Tasks</span>
-                    <span>Help</span>
-                    <span>Settings</span>
-                </div>
-            </ul>
-        </div>
+            <li>
+                <a href="../page/dados.html">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Meus Dados</span>
+                    <span class="toolipe">Meus Dados</span>
+                </a>
+            </li>
 
-        <div class="sidebar-footer">
-            <a href="#" class="account tooltip-element" data-tooltip="0">
-                <i class='bx bx-user'></i>
-            </a>
-
-            <div class="admin-user tooltip-element" data-tooltip="1">
-                <div class="admin-profile hide">
-                    <img src="../img/rendainfinitanovalogo.svg" alt="">
-                    <div class="admin-info">
-                        <h3>ADMIN</h3>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Meus LEADS</span>
+                    <span class="toolipe">Meus LEADS</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profileContent">
+            <div class="profile">
+                <div class="profileDetail">
+                    <img src="./img/brunosalmito.png">
+                    <div class="name_job">
+                        <div class="name">Bruno Salmito</div>
+                        <div class="job">Web Developer</div>
                     </div>
                 </div>
-                <a href="#" class="log-out">
-                    <i class='bx bx-log-out'></i>
-                </a>
-            </div>
-
-            <div class="tooltip">
-                <span class="show">DEV SCHOOL</span>
-                <span>Logout</span>
+    
+                <i class='bx bx-log-out' id="logout" ></i>
             </div>
         </div>
-    </nav>
-
-    <main>
-        <h1 class="h-1">Dashboard <span class="bar">|</span></h1>
-        <h2 class="h-2">seja bem-vindo a renda infinita</h2>
-
-        <div class="container">
-            <p class="paragraph"> Seu link de verificacao e: </p>
-            <a
-                href="#">https://www.google.com/search?q=google+font&oq=google+font&aqs=chrome..69i57j35i39j0i512l3j69i60l2j69i65.2897j0j7&sourceid=chrome&ie=UTF-8</a>
+    </div>
+    <div class="homeContent">
+        <h2>Dashboard |</h2>
+        <div class="cont">
+                 <p class="paragraph">Seja Bem-Vindo a Renda Infinita</p> 
+                 <div class="container">
+                    <div class="main-text">
+                        Seu link de verificação é:
+                    </div>
+                    <a class="links" href="#">https://royalqs.com/h5/#/register?invite_code=QSK59</a>
+                 </div>
+             </div>
         </div>
-
-
-
-        <p class="copyright">
-            &copy; 2022 - <span>DEV SCHOOL</span> Todos os direitos reservados
-        </p>
-    </main>
-
+    </div>
+    
     <script src="../js/script.js"></script>
-
-
 </body>
-
 </html>
