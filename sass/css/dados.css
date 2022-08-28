@@ -12,32 +12,24 @@ input {
     margin-block: 12px;
 }
 
-input[type='file'] {
-    width: 10%;
-    height: 1%;
-    color: #fff;
-    height: 100vh;
-    border: none;
-} 
-/* 
-input {
-    margin-top: 1rem;
-} */
 
 input::file-selector-button {
     color: #000;
     padding: 0.5em;
     border: 1px solid #ccc;
-      width: 6vw; 
-    /* height: vh;  */
-    margin-top:1px;
-    border-radius: 9px;
+    width: 6vw; 
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 #arquivo{
+    border: 1px solid;
+    background: transparent;
     padding: 9px;
     height: 4vh;
     width: 17vw;
+    color: #fff;
 }
 
 
