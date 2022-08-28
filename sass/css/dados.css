@@ -52,7 +52,7 @@ label {
     color: #fff;
     border-radius: 49px;
     border: 0;
-    width: 4vw;
+    width: 115px;
     height: 3vh;
     margin-right: 340px;
     margin-top: 13px;
@@ -87,7 +87,7 @@ label {
 .container_profil {
     background-color: rgba(255, 225, 225, 0.1);
     width: 38vh;
-    height: 27vh;
+    height: 39vh;
     margin-top: 21px;
     margin-left: 2vh;
     padding: 2rem;
@@ -123,6 +123,12 @@ label {
     justify-content: center;
     color:#fff;
     margin-top: 19px;
+}
+.Photograph{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin-top: 12px;
 }
 ::placeholder {
     color: rgb(225, 225, 225);

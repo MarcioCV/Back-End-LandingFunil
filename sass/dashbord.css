@@ -148,39 +148,9 @@ html{
   position: relative;
   height: 60px;
   padding: 10px 6px;
-  background-color: #1d1d31;
+  background-color: #1C1C1C;;
 }
 
-.sidebar .profileContent .profile .profileDetail {
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.sidebar .profileContent .profile .profileDetail img {
-  width: 45px;
-  height: 45px;
-  object-fit: cover;
-  background-color: #202047;
-  border-radius: 12px;
-}
-
-.sidebar .profileContent .profile .profileDetail .name_job {
-  margin-left: 15px;
-}
-
-.profile .profileDetail .name_job .name {
-  font-size: 15px;
-  font-weight: 400;
-
-}
-
-.profile .profileDetail .name_job .job {
-  font-size: 12px;
-}
 
 .profile #logout {
   position: absolute;
