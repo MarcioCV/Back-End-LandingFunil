@@ -104,11 +104,12 @@ label {
     color: #fff;
     border-radius: 50px;
     border: 0;
-    width: 11vw;
+    width: 250px;
     height: 5vh;
-    font-size: 23px;
+    font-size: 19px;
     font-weight: 600 !important;
     text-transform: uppercase;
+
 }
 
 .h-1 {
