@@ -9,19 +9,19 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 
-.logout_{
-color: #fff;
+.logout_ {
+  color: #fff;
 }
-html{
+
+html {
   /* background-color: #000 !important; */
-    background: linear-gradient(197deg, rgba(205, 88, 48, 1) 0%, rgba(138, 1, 59, 1) 13%, rgba(136, 8, 8, 1) 18%, rgba(0, 0, 0, 1) 35%) !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
+  background: linear-gradient(197deg, rgba(205, 88, 48, 1) 0%, rgba(138, 1, 59, 1) 13%, rgba(136, 8, 8, 1) 18%, rgba(0, 0, 0, 1) 35%) !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
 }
-/* sidebar */
+
 .sidebar {
   position: fixed;
   width: 78px;
@@ -148,7 +148,8 @@ html{
   position: relative;
   height: 60px;
   padding: 10px 6px;
-  background-color: #1C1C1C;;
+  background-color: #1C1C1C;
+  ;
 }
 
 
@@ -243,17 +244,13 @@ html{
 
 .container {
   background-color: rgba(255, 225, 225, 0.1);
-    width: 70vh;
-    height: 27vh;
-    margin-left: 22vh;
-    padding: 2rem;
-    box-shadow: rgb(0 0 0) 5px 5px 15px;
-    font-weight: bold;
-    border-radius: 24px;
+  width: 70vh;
+  height: 27vh;
+  padding: 2rem;
+  box-shadow: rgb(0 0 0) 5px 5px 15px;
+  font-weight: bold;
+  border-radius: 24px;
 }
-/* .general{
-  display: none;
-} */
 
 .paragraph {
   font-size: 2vw;
@@ -267,17 +264,18 @@ html{
   letter-spacing: 2px;
 }
 
-.links{
+.links {
   font-size: 45px;
 }
 
 
-.main-text{
+.main-text {
   font-size: 57px;
   font-weight: bold;
   letter-spacing: 4px;
   color: #fff;
 }
+
 /* .general{
   display:none
 } */
