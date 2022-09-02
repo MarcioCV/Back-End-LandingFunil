@@ -257,9 +257,6 @@ html {
   background: linear-gradient(270deg, rgba(237, 114, 32, 1) 0%, rgba(209, 0, 106, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* margin-left: 22vh; */
-  margin-left: 22vh;
-  margin-bottom: 18px;
   font-weight: 900;
   letter-spacing: 2px;
 }
@@ -276,9 +273,9 @@ html {
   color: #fff;
 }
 
-/* .general{
+.general{
   display:none
-} */
+}
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(40deg, #FF006C 14%, #FF622C 64%);
