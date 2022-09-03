@@ -1,8 +1,4 @@
-@media only screen and (max-width: 600px) {
-
-    /* body {
-      background-color: lightblue;
-    } */
+@media only screen and (max-width: 667px) {
     .sidebar {
         display: none;
     }
@@ -20,9 +16,6 @@
         background-color: rgba(0, 0, 0, 0.9);
         height: 68px;
     }
-
-
-
     #menu {
         display: flex;
         list-style: none;
@@ -109,7 +102,6 @@
         max-width: 147px;
     }
 
-
     .homeContent,
     .h-2 {
         margin: 0 !important;
@@ -172,14 +164,13 @@
 
     .container_ {
         background-color: rgba(255, 225, 225, 0.1);
-        width: 83vw;
-        height: 75vh;
+        width: 94vw;
+        height: 82vh;
         padding: 2rem;
         box-shadow: 5px 5px 15px #000;
         font-weight: bold;
         border-radius: 9px;
-        display: flex;
-        flex-direction: column;
+        margin: 0px !important;
     }
 
     .container_dados {
