@@ -123,6 +123,7 @@
         font-size: 18px;
         margin-bottom: 20px;
         font-weight: 0 !important;
+        color: #fff;
     }
 
     .h-4 {
@@ -136,7 +137,7 @@
     .container {
         background-color: rgba(255, 225, 225, 0.1);
         width: 96vw;
-        height: 74vh;
+        height: 20vh;
         padding: 2rem;
         box-shadow: rgb(0 0 0) 5px 5px 15px;
         font-weight: bold;
