@@ -1,0 +1,33 @@
+@media only screen and (max-width: 896px) {
+    .container_ {
+        background-color: rgba(255, 225, 225, 0.1);
+        width: 94vw;
+        height: 580px;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px #000;
+        font-weight: bold;
+        border-radius: 8px;
+        margin: 0px !important;
+    }
+
+    .container_dados {
+        background-color: rgba(255, 225, 225, 0.1);
+        width: 94vw;
+        height: 331px;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px #000;
+        margin-top: 25px;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+    .container_profil {
+        margin-bottom: 36px;
+        background-color: rgba(255, 225, 225, 0.1);
+        width: 94vw;
+        height: 370px;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px #000;
+        font-weight: bold;
+        border-radius: 7px;
+    }
+}
