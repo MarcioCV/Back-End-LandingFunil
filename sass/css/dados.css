@@ -19,7 +19,6 @@ input::file-selector-button {
     width: 6vw;
     border-radius: 4px;
     font-weight: bold;
-    margin-right: 10px;
 }
 
 
@@ -34,12 +33,10 @@ input::file-selector-button {
 
 
 .button {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin: 9px;
-    /* margin-left: 38vh; */
 }
 
 label {
