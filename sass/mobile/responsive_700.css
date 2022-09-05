@@ -109,7 +109,6 @@
         max-width: 147px;
     }
 
-
     .homeContent,
     .h-2 {
         margin: 0 !important;
@@ -147,7 +146,9 @@
 
     .main-text {
         font-size: 14px;
+        font-weight: bold;
         letter-spacing: 4px;
+        padding: 0px;
         color: #fff;
     }
 
@@ -165,6 +166,7 @@
         margin-right: 23px;
         line-height: 44px;
         font-size: 21px;
+        margin: 0px !important;
     }
 
     .cont {
@@ -240,11 +242,11 @@
 
     #arquivo {
         border: 1px solid;
-    background: transparent;
-    padding: 9px;
-    height: 48px;
-    width: 84vw;
-    color: #fff;
+        background: transparent;
+        padding: 9px;
+        height: 48px;
+        width: 84vw;
+        color: #fff;
     }
 
 

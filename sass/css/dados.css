@@ -19,6 +19,7 @@ input::file-selector-button {
     width: 6vw;
     border-radius: 4px;
     font-weight: bold;
+    margin-right: 40px;
 }
 
 
