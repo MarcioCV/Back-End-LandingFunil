@@ -48,13 +48,13 @@ html {
   /* pointer-events: none; */
 }
 
-.sidebar .logoContent .logo i {
+.sidebar .logoContent .logo {
   font-size: 28px;
   margin-right: 5px;
 }
 
 .sidebar .logoContent .logo .logoName {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
