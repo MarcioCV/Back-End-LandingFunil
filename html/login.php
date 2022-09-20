@@ -42,7 +42,7 @@
         <div class="general">
             <div class="container">
                 <div class="input_all">
-                    <form method="POST" action="login.php">
+                    <form method="POST" action="../php/efetuar_login.php">
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p class="paragraph">Insira seu e-mail e senha ou cadastre-se para entrar</p>
                         <p><label for="email">E-mail</label></p>
@@ -54,11 +54,11 @@
                             <input type="checkbox" name="" id="">
                             <span>Mantenha-me conectado </span>
                         </div>
+                        <div class="button">
+                            <p><button class="btn" type="submit" name="submit">Entrar</button></p>
+                        </div>
                     </form>
                 </div>
-            </div>
-            <div class="button">
-                <p><button class="btn" type="submit"><a href="../page/back_office.html">Entrar</a></button></p>
             </div>
             <h5 class="h-5"><a href="../html/reset_passaword.html">Esqueci minha senha</a></h5>
             <h5 class="h-5">Ainda não tem cadastro ? <a href="../html/registro.html"> Cadastro </a></h5>

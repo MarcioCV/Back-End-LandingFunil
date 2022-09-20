@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    // print_r($_SESSION);
+        if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['password']) == true))
+        {
+            unset($_SESSION['email']);
+            unset($_SESSION['password']);
+            header('Location: ../html/login.php');
+        }
+        $logado = $_SESSION['email'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -43,7 +56,7 @@
     <div class="sidebar">
         <div class="logoContent">
             <div class="logo">
-                <div class="logoName">fulanodetal@outlook.com</div> 
+                <div class="logoName"><?=$logado?></div> 
             </div>
 
             <i class='bx bx-menu' id="btn"></i>
