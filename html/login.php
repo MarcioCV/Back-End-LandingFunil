@@ -42,7 +42,7 @@
         <div class="general">
             <div class="container">
                 <div class="input_all">
-                    <form method="POST">
+                    <form method="POST" action="login.php">
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p class="paragraph">Insira seu e-mail e senha ou cadastre-se para entrar</p>
                         <p><label for="email">E-mail</label></p>

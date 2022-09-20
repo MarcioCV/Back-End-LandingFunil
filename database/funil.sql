@@ -12,3 +12,5 @@ CREATE TABLE User(
     whatsapp_group VARCHAR(500),
     telegrama_group VARCHAR(500)
 );
+
+SELECT * FROM User;

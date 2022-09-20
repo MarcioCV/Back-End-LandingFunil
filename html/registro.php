@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-        <title>Registro</title>
-      <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_300.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_400.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_900.css">
-        <link rel="icon" href='../img/icon/logorenda.svg'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_300.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_400.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_900.css">
+    <link rel="icon" href='../img/icon/logorenda.svg'>
+</head>
 
 <body>
     <header id="header">
@@ -42,31 +42,36 @@
         <div class="general">
             <div class="container">
                 <div class="input_all">
-                    <form method="POST">
+                    <form method="POST" action="../php/cadastro.php">
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p><label for="name">Nome completo</label></p>
-                        <input class="form-control" type="name" name="name" required placeholder=" Stephen Watson">
+                        <input class="form-control" type="text" name="name" required placeholder=" Stephen Watson">
                         <p><label for="email">E-mail</label>
-                        <input class="form-control" type="email" name="email" required placeholder=" email@gmail.com">
+                            <input class="form-control" type="email" name="email" required
+                                placeholder=" email@gmail.com">
                         <p><label for="phone">Celular e DDD (com WhastsApp)</label>
-                        <input class="form-control" type="tel" name="phone" required placeholder="+1 582-262-5952">
+                            <input class="form-control" type="text" name="phone" required placeholder="+1 582-262-5952" maxlength="20" >
                         <p><label for="password">Senha</label>
-                        <input class="form-control" type="password" name="password" required placeholder=" *****************">
+                            <input class="form-control" type="password" name="password" required
+                                placeholder=" *****************">
                         <p><label for="password">Repite Senha</label>
-                        <input class="form-control" type="password" name="password" required placeholder=" ******************">
+                            <input class="form-control" type="password" name="confirm" required
+                                placeholder=" ******************">
                         </p>
                         <div class="check-box">
                             <input type="checkbox" name="" id="">
                             <span>Eu li e aceito os <label class="termos">Termos de uso</label></span>
                         </div>
+                        <div class="button">
+                            <button class="btn" type="submit" name="submit">Cadastro</button>
+                            
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="button">
-                <p><button class="btn" type="submit">Cadastro</button></p>
-            </div>
-            <h5 class="h-5">Já tem cadastro? 
-                <a href="../html/login.html"> Entrar </a></h5>
+            <h5 class="h-5">Já tem cadastro?
+                <a href="../html/login.html"> Entrar </a>
+            </h5>
         </div>
     </header>
     <script src="../js/script.js"></script>

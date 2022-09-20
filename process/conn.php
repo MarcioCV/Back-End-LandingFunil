@@ -1,12 +1,13 @@
 <?php
-  session_start();
-
+  $host = "localhost"; 
   $user = "root";
-  $pass = "Funil_ronald";
-  $db = "";
-  $host = "localhost";
+  $pass = "";
+  $db = "Funil_ronald";
 
-  $mysqli = new $mysqli($host,$user,$password,$db);
-  if($mysqli->error)
-  die("Falha ao conectar ao banco de dados:" . $mysqli->error);
+  $conn = new mysqli($host,$user,$pass,$db);
+  // if($conn->connect_errno){
+  //   echo "Error";
+  // }else{
+  //   echo "Conexao efetuada com sucesso";
+  // }
 ?>
