@@ -1,0 +1,70 @@
+@media only screen and (max-width: 414px) {
+
+   
+    .button-gradient {
+        margin: 10px;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 900;
+        width: 83vw !important;
+        height: 36px !important;
+    }
+    .button-transparent {
+        margin: 10px;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 900;
+        width: 83vw !important;
+        height: 36px !important;
+        font-weight: 100;
+    }
+    .card-content {
+        width: 30vw;
+        height: 176px;
+        background-color: transparent;
+    }
+
+    .img_depoimentos {
+        display: none !important;
+    }
+
+    #carouselExampleIndicators {
+        width: 100vw;
+    }
+
+    iframe {
+        width: 93vw !important;
+        height: 53vw !important;
+        border-radius: 5px;
+    }
+    .div_button_story {
+        position: absolute;
+        width: 265px;
+        display: flex;
+        justify-content: end;
+    }
+    .video_review{
+        width: 300px;
+    }
+    .stars{
+        max-width: 90px;
+    }
+    .borda_mentor {
+        width: 45vw;
+        height: 45vw;
+    }
+    
+    .foto_mentor {
+        max-width: 42vw;
+        border-radius: 210px;
+    }
+    .mentor_mobile{
+        font-size: 15px;
+    }
+    .button_telegram{
+        font-size: 11px;
+    }
+    .mynavbar {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}

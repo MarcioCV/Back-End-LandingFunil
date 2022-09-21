@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="323.479" viewBox="0 0 95 323.479">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff622c"/>
+      <stop offset="1" stop-color="#ff006c"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_40" data-name="Grupo 40" transform="translate(-890 -2019.521)">
+    <g id="Grupo_26" data-name="Grupo 26" transform="translate(628 1466.392)">
+      <circle id="Elipse_4" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 781.608)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 795.608)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 809.608)" fill="url(#radial-gradient)"/>
+    </g>
+    <rect id="Retângulo_37" data-name="Retângulo 37" width="7" height="262.021" transform="translate(933.958 2019.521)" fill="#ff006c"/>
+  </g>
+</svg>

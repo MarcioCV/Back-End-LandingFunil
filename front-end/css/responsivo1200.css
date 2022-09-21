@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1200px) {
+    #linha_completa_desktop {
+        display: none;
+
+    }
+
+    #linha_completa_mobile {
+        display: flex;
+    }
+
+}   

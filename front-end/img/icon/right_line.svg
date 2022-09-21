@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360.042" height="309.521" viewBox="0 0 360.042 309.521">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff006c"/>
+      <stop offset="1" stop-color="#ff622c"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff622c"/>
+      <stop offset="1" stop-color="#ff006c"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_39" data-name="Grupo 39" transform="translate(-912 -1011.479)">
+    <rect id="Retângulo_18" data-name="Retângulo 18" width="7" height="306.021" transform="translate(966.021 1277) rotate(-90)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_22" data-name="Grupo 22" transform="translate(513 444.392)">
+      <rect id="Retângulo_21" data-name="Retângulo 21" width="7" height="47.5" transform="translate(443 829.108)" fill="#ff006c"/>
+      <rect id="Retângulo_36" data-name="Retângulo 36" width="7" height="262.021" transform="translate(443 567.087)" fill="#ff006c"/>
+      <circle id="Elipse_4" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(399 781.608)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(413 795.608)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(427 809.608)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

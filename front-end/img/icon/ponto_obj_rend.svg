@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff622c"/>
+      <stop offset="1" stop-color="#ff006c"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_13" data-name="Grupo 13" transform="translate(-262 -782)">
+    <circle id="Elipse_4" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

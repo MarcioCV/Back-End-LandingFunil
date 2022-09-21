@@ -2,7 +2,7 @@
     session_start();
     // print_r($_SESSION);
         if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['password']) == true))
-        {
+        {   
             unset($_SESSION['email']);
             unset($_SESSION['password']);
             header('Location: ../html/login.php');
@@ -45,8 +45,8 @@
                         <span id="hamburger"></span>
                     </button>
                     <ul id="menu" role="menu">
-                        <li><a href="../page/back_office.html">Inicio</a></li>
-                        <li><a href="../page/dados.html">Meus Dados</a></li>
+                        <li><a href="../page/system.php">Inicio</a></li>
+                        <li><a href="../page/dados.php">Meus Dados</a></li>
                     </ul>
                 </nav>
         </div>
@@ -75,7 +75,7 @@
 
 
             <li>
-                <a href="../page/dados.html">
+                <a href="../page/dados.php">
                     <i class='bx bx-user'></i>
                     <span class="links_name">Meus Dados</span>
                     <span class="toolipe">Meus Dados</span>
@@ -84,7 +84,7 @@
         </ul>
         <div class="profileContent">
             <div class="profile">
-                <a class="logout_" href="../html/login.html">
+                <a class="logout_" href="../php/sair.php">
                     <i class='bx bx-log-out' id="logout">
 
                     </i>
@@ -104,7 +104,7 @@
                 <div class="main-text">
                     Seu link de verificação é:
                 </div>
-                <a class="links" href="#">Https://rendainfinita.com/fulano <br>detal</a>
+                <a class="links" href="<?= $_SESSION["royalq"]?>"><?= $_SESSION["royalq"]?></a>
             </div>
         </div>
     </div>

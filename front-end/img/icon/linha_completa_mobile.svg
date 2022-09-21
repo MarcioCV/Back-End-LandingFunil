@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="1560" viewBox="0 0 27 1560">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff006c"/>
+      <stop offset="1" stop-color="#ff622c"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff622c"/>
+      <stop offset="1" stop-color="#ff006c"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_54" data-name="Grupo 54" transform="translate(-201 -697)">
+    <rect id="Retângulo_15" data-name="Retângulo 15" width="3" height="1536" transform="translate(213 709)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_12" data-name="Grupo 12" transform="translate(-61 -85)">
+      <circle id="Elipse_4" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_13" data-name="Grupo 13" transform="translate(-61 126)">
+      <circle id="Elipse_4-2" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-2" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-2" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_14" data-name="Grupo 14" transform="translate(-61 402)">
+      <circle id="Elipse_4-3" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-3" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-3" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_17" data-name="Grupo 17" transform="translate(-61 661)">
+      <circle id="Elipse_4-4" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-4" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-4" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_18" data-name="Grupo 18" transform="translate(-61 943)">
+      <circle id="Elipse_4-5" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-5" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-5" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_34" data-name="Grupo 34" transform="translate(-61 1164)">
+      <circle id="Elipse_4-6" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-6" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-6" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_21" data-name="Grupo 21" transform="translate(-61 1448)">
+      <circle id="Elipse_4-7" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-7" data-name="Elipse 2" cx="9.5" cy="9.5" r="9.5" transform="translate(266 786)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-7" data-name="Elipse 3" cx="5.5" cy="5.5" r="5.5" transform="translate(270 790)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

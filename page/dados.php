@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    // print_r($_SESSION);
+        if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['password']) == true))
+        {   
+            unset($_SESSION['email']);
+            unset($_SESSION['password']);
+            header('Location: ../html/login.php');
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -43,7 +54,7 @@
         <div class="logoContent">
             <div class="logo">
                 <i class='bx bxl-nodejs'></i>
-                <div class="logoName">Bruno Salmito</div>
+                <div class="logoName"><?=$_SESSION['name']?></div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
@@ -70,7 +81,7 @@
         </ul>
         <div class="profileContent">
             <div class="profile">
-                <a class="logout_" href="../html/login.html">
+                <a class="logout_" href="../php/sair.php">
                     <i class='bx bx-log-out' id="logout">
 
                     </i>
@@ -83,29 +94,33 @@
         <div class="cont">
             <div class="container_">
                 <div class="input_all">
-                    <form method="POST">
+                    <form method="POST" action="../php/atualizar_dados.php">
                         <p><label for="name">Nome completo</label></p>
-                        <input class="form-control" type="name" name="name" required placeholder=" Fulano de Tal">
+                        <input class="form-control" type="name" name="name" required placeholder=" Fulano de Tal" value="<?=$_SESSION['name']?>">
                         <p><label for="email">E-mail</label>
                             <input class="form-control" type="email" name="email" required
-                                placeholder=" fulanodetal@outlook.com">
+                                placeholder=" fulanodetal@outlook.com" value="<?=$_SESSION["email"]?>">
                         <p><label for="phone">WhastApp</label>
-                            <input class="form-control" type="tel" name="phone" required placeholder=" (41)70707070">
+                            <input class="form-control" type="tel" name="phone" required placeholder=" (41)70707070" value="<?=$_SESSION["phone"]?>">
                         <p><label for="text">Link RoyalQ</label>
-                            <input class="form-control" type="text" name="text" required
-                                placeholder=" www.royalq.com/fulanodetal">
+                            <input class="form-control" type="text" name="royalq" required
+                                placeholder=" www.royalq.com/fulanodetal" value="<?php if(isset($_SESSION["royalq"])){echo $_SESSION["royalq"];}else{echo "Cole aqui seu link RoyalQ";}?>">
                         <p><label for="text">Link Binance</label>
-                            <input class="form-control" type="text" name="text" required
-                                placeholder=" www.binance.com/fulanodetal">
+                            <input class="form-control" type="text" name="binance" required
+                                placeholder=" www.binance.com/fulanodetal" value="<?php if(isset($_SESSION["binance"])){echo $_SESSION["binance"];}else{echo "Cole aqui seu link Binance";}?>">
                         </p>
                         <p><label for="text">Link grupo Telegram</label>
-                            <input class="form-control" type="text" name="text" required
-                                placeholder=" Telegram.fulanodetal.contato">
+                            <input class="form-control" type="text" name="telegram" required
+                                placeholder=" Telegram.fulanodetal.contato" value="<?php if(isset($_SESSION["telegram"])){echo $_SESSION["telegram"];}else{echo "Cole aqui seu link Telegram";}?>">
                         </p>
+                        <p><label for="text">Link grupo WhatsApp</label>
+                            <input class="form-control" type="text" name="wp_group" required
+                                placeholder="https://chat.whatsapp.com/iddWdawiDNdw" value="<?php if(isset($_SESSION["whatsapp_group"])){echo $_SESSION["whatsapp_group"];}else{echo "Cole aqui seu link WhatsApp";}?>">
+                        </p>
+                        <div class="button">
+                            <p><button class="btn" type="submit" name="submit">Salvar</button></p>
+                        </div>
                     </form>
-                </div>
-                <div class="button">
-                    <p><button class="btn" type="submit">Salvar</button></p>
                 </div>
             </div>
             <div class="cont_dados">

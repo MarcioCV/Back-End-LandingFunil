@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="663.458" height="2240" viewBox="0 0 663.458 2240">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff006c"/>
+      <stop offset="1" stop-color="#ff622c"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff622c"/>
+      <stop offset="1" stop-color="#ff006c"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_53" data-name="Grupo 53" transform="translate(-629.542 -995)">
+    <rect id="Retângulo_15" data-name="Retângulo 15" width="7" height="2153" transform="translate(957 1042)" fill="#ff006c"/>
+    <rect id="Retângulo_38" data-name="Retângulo 38" width="7" height="313.458" transform="translate(979.542 1638) rotate(-90)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_41" data-name="Retângulo 41" width="7" height="313.458" transform="translate(943 1340) rotate(90)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_42" data-name="Retângulo 42" width="7" height="313.458" transform="translate(943 1922) rotate(90)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_43" data-name="Retângulo 43" width="7" height="313.458" transform="translate(943 2568) rotate(90)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_39" data-name="Retângulo 39" width="7" height="313.458" transform="translate(979.542 2252) rotate(-90)" fill="url(#linear-gradient)"/>
+    <rect id="Retângulo_40" data-name="Retângulo 40" width="7" height="313.458" transform="translate(979.542 2883) rotate(-90)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_18" data-name="Grupo 18" transform="translate(651 213)">
+      <circle id="Elipse_4" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_46" data-name="Grupo 46" transform="translate(651 514)">
+      <circle id="Elipse_4-2" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-2" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-2" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_47" data-name="Grupo 47" transform="translate(651 805)">
+      <circle id="Elipse_4-3" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-3" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-3" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_48" data-name="Grupo 48" transform="translate(651 1096)">
+      <circle id="Elipse_4-4" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-4" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-4" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_49" data-name="Grupo 49" transform="translate(651 1419)">
+      <circle id="Elipse_4-5" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-5" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-5" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_50" data-name="Grupo 50" transform="translate(651 1742)">
+      <circle id="Elipse_4-6" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-6" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-6" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_51" data-name="Grupo 51" transform="translate(651 2050)">
+      <circle id="Elipse_4-7" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-7" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-7" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_52" data-name="Grupo 52" transform="translate(651 2358)">
+      <circle id="Elipse_4-8" data-name="Elipse 4" cx="47.5" cy="47.5" r="47.5" transform="translate(262 782)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_2-8" data-name="Elipse 2" cx="33.5" cy="33.5" r="33.5" transform="translate(276 796)" opacity="0.277" fill="url(#radial-gradient)"/>
+      <circle id="Elipse_3-8" data-name="Elipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(290 810)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

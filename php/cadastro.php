@@ -12,6 +12,6 @@ include_once("../process/conn.php");
         
     }
 
-header("Location: http://localhost/Back-End-LandingFunil/html/login.php");
+    header('Location: ../html/login.php');
     die();
 ?>
