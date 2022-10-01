@@ -23,7 +23,7 @@
         {    
             unset($_SESSION['email']);
             unset($_SESSION['password']);
-            header('Location: ../html/login.php');
+            header('Location: ../html/login.php?erro=1');
         }
         else
         {
@@ -42,6 +42,6 @@
         }
     }else{
         // Nao acessa
-        header('Location: ../html/login.php');
+        header('Location: ../html/login.php?erro=1');    
     }
 ?>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-        <title>Registro</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_300.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_400.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_900.css">
-        <link rel="icon" href='../img/icon/logorenda.svg'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_300.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_400.css">
+    <link rel="stylesheet" href="../css/mobile/responsive_900.css">
+    <link rel="icon" href='../img/icon/logorenda.svg'>
+</head>
 
 <body>
     <header id="header">
@@ -42,20 +42,22 @@
         <div class="general">
             <div class="container">
                 <div class="input_all">
-                    <form method="POST">
+                <form method="POST" action="" >
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p class="paragraph">Você pode redefinir sua senha aqui</p>
                         <p><label for="email">E-mail</label></p>
                         <input class="form-control" type="email" name="email" required placeholder=" email@gmail.com">
                         </p>
-                    </form>
-                </div>
-            </div>
-            <div class="button">
-                <p><button class="btn" type="submit">Envie minha senha</button></p>
-            </div>
-            <h5 class="h-5">Já tem cadastro? 
-                <a href="../html/login.html"> Entrar </a></h5>
+                    </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn" type="submit" name="submit">Submit</a></button>
+                        <input type="hidden" name="env" value="form">
+                    </div>
+                </form>
+                <h5 class="h-5">Já tem cadastro?
+                    <a href="../html/login.php"> Entrar </a>
+                </h5>
         </div>
     </header>
     <script src="../js/script.js"></script>

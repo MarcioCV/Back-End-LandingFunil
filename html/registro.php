@@ -70,7 +70,7 @@
                 </div>
             </div>
             <h5 class="h-5">Já tem cadastro?
-                <a href="../html/login.html"> Entrar </a>
+                <a href="../html/login.php"> Entrar </a>
             </h5>
         </div>
     </header>

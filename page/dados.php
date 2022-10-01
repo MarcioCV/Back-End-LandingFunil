@@ -53,8 +53,7 @@
     <div class="sidebar">
         <div class="logoContent">
             <div class="logo">
-                <i class='bx bxl-nodejs'></i>
-                <div class="logoName"><?=$_SESSION['name']?></div>
+                <div class="logoName"><?=$_SESSION['email']?></div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
         </div>

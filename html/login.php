@@ -50,6 +50,13 @@
                         <p><label for="password">Senha</label>
                         <input class="form-control" type="password" name="password" required placeholder=" ************">
                         </p>
+                        <?php
+                            if(isset($_GET["erro"])){
+                                if($_GET["erro"] == 1){
+                                    echo '<p class="paragraph" style="color: red !important;">email ou senha incorretos, tente novamente!</p>';
+                                }
+                            }
+                        ?>
                         <div class="check-box">
                             <input type="checkbox" name="" id="">
                             <span>Mantenha-me conectado </span>
@@ -60,8 +67,8 @@
                     </form>
                 </div>
             </div>
-            <h5 class="h-5"><a href="../html/reset_passaword.html">Esqueci minha senha</a></h5>
-            <h5 class="h-5">Ainda não tem cadastro ? <a href="../html/registro.html"> Cadastro </a></h5>
+            <h5 class="h-5"><a href="../php/requestReset.php">Esqueci minha senha</a></h5>
+            <h5 class="h-5">Ainda não tem cadastro ? <a href="../html/registro.php"> Cadastro </a></h5>
         </div>
     </header>
     <script src="../js/script.js"></script>
