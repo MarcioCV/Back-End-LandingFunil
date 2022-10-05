@@ -34,11 +34,11 @@ if(isset($_POST ["email"])){
         $mail->addReplyTo('no-reply@gmail.com', 'No reply');
     
     
-        $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]);
+        $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]) . "/reset_password.php?code=$code";
         $mail->isHTML(true);                                 
         $mail->Subject = 'Your password reset link';
-        $mail->Body    = "<h1> You requested a password reset </h1>;
-                            Click this link  to do so";
+        $mail->Body    = "<h1> You requested a password reset </h1>
+                            Click <a href='$url'> this link </a> to do so";
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();
@@ -108,7 +108,9 @@ if(isset($_POST ["email"])){
                 </form>
                 <h5 class="h-5">Já tem cadastro?
                     <a href="../html/login.php"> Entrar </a>
+                    <a href="../html/reset_password.php"> Entrar </a>
                 </h5>
+              
         </div>
     </header>
     <script src="../js/script.js"></script>
