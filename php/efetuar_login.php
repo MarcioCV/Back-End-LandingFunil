@@ -7,12 +7,14 @@
         include_once("../process/conn.php");
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $password_crypt = md5($password);
+
 
         // print_r($email);
         // print_r($password);
 
 
-        $sql = "SELECT * FROM user WHERE email = '$email' and password = '$password'";
+        $sql = "SELECT * FROM user WHERE email = '$email' and password = '$password_crypt'";
 
         $result = $conn->query($sql);
         
@@ -29,7 +31,6 @@
         {
             $row = $result -> fetch_row();
             $_SESSION['email'] = $email;
-            $_SESSION['password'] = $password;
             $_SESSION['name'] = $row[1];
             $_SESSION['phone'] = $row[2];
             $_SESSION['profile_pictures'] = $row[5];

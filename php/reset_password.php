@@ -1,13 +1,15 @@
 <?php
-    include("../process/config.php");
+    include_once("../process/config.php");
 
  if(!isset($_GET["code"])){ // variavel de codigo 
-    exit("Can't find page");
+    header('Location: ../html/login.php');
 }
 
 $code = $_GET["code"]; // Url - variavel de codigo wda url
+echo $code;
 
 $getEmailQuery = mysqli_query($con, "SELECT email FROM reset WHERE code ='$code'");
+var_dump($getEmailQuery);
 if(mysqli_num_rows($getEmailQuery)== 0){ // linha econtradas  
     exit("Can't find page");
 }
@@ -23,21 +25,58 @@ if(isset($_POST["password"])){
 
     if($query){
         $query = mysqli_query($con, "DELETE FROM reset WHERE code = '$code' ");
-        exit("PASSWORD UPDATE");
+        header('Location: ../html/login.php');
     }
     else{
-        exit("SOMETHING WENT WRONG");
+        header('Location: ../html/login.php?erro=2');
     }
 
 }
 
 ?>
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href='../img/icon/logorenda.svg'>
+        <link rel="stylesheet" href="../sass/css/dashbord.css">
+        <link rel="stylesheet" href="../sass/css/dados.css">
+        <link rel="stylesheet" href="../sass/mobile/responsive_600.css">
+        <link rel="stylesheet" href="../sass/mobile/responsive_700.css">
+        <link rel="stylesheet" href="../sass/mobile/responsive_800.css">
+</head> -->
+<body>
+    
+</body>
+</html>
 <form method="POST" action="">
     <input type="password" name="password" placeholder="New Password">
     <br>
     <input type="submit" name="submit" value="Update password">
 </form>
+<!-- 
+<div class="cont_dados">
+                <div class="container_dados">
+                    <div class="input_all">
+                        <form method="POST">
+                            <h1 class="h-1">Alteraçao de senha</h1>
+                            <span class="text-sub"> Só preencha em caso de troca.</span>
+                            <p><label for="password">Senha</label>
+                                <input class="form-control" type="password" name="password" required
+                                    placeholder="  ****************">
+                            <p><label for="password">Confirme a Senha</label>
+                                <input class="form-control" type="password" name="password" required
+                                    placeholder="  *******************">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="button">
+                        <p><button class="btn" type="submit">Salvar</button></p>
+                    </div>
+                </div> -->
 
 <!-- <!DOCTYPE html>
 <html lang="en">

@@ -55,6 +55,12 @@
                                 if($_GET["erro"] == 1){
                                     echo '<p class="paragraph" style="color: red !important;">email ou senha incorretos, tente novamente!</p>';
                                 }
+                                if($_GET["erro"] == 2){
+                                    echo '<p class="paragraph" style="color: red !important;">Troca de senha falhou, tente novamente!</p>';
+                                }
+                                if($_GET["erro"] == 3){
+                                    echo '<p class="paragraph" style="color: green !important;">Email enviado!</p>';
+                                }
                             }
                         ?>
                         <div class="check-box">

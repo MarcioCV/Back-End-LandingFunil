@@ -22,5 +22,3 @@ CREATE TABLE reset(
     email VARCHAR(225)
 );
 
-
-DROP TABLE reset;

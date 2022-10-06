@@ -122,25 +122,7 @@
                     </form>
                 </div>
             </div>
-            <div class="cont_dados">
-                <div class="container_dados">
-                    <div class="input_all">
-                        <form method="POST">
-                            <h1 class="h-1">Alteraçao de senha</h1>
-                            <span class="text-sub"> Só preencha em caso de troca.</span>
-                            <p><label for="password">Senha</label>
-                                <input class="form-control" type="password" name="password" required
-                                    placeholder="  ****************">
-                            <p><label for="password">Confirme a Senha</label>
-                                <input class="form-control" type="password" name="password" required
-                                    placeholder="  *******************">
-                            </p>
-                        </form>
-                    </div>
-                    <div class="button">
-                        <p><button class="btn" type="submit">Salvar</button></p>
-                    </div>
-                </div>
+           
                 <div class="container_profil">
                     <div class="input_all">
                         <form method="POST">
