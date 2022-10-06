@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="../php/requestReset.php">FORGOT PASSWORD?</a>
-</body>
-</html>
+<?php
+    include("../process/config.php");
+
+ if(!isset($_GET["code"])){ // variavel de codigo 
+    exit("Can't find page");
+}
+
+$code = $_GET["code"]; // Url - variavel de codigo wda url
+
+$getEmailQuery = mysqli_query($con, "SELECT email FROM reset WHERE code ='$code'");
+if(mysqli_num_rows($getEmailQuery)== 0){ // linha econtradas  
+    exit("Can't find page");
+}
+
+if(isset($_POST["password"])){
+    $passw =  $_POST["password"];
+    $passw = md5($passw);
+
+    $row = mysqli_fetch_array($getEmailQuery);
+    $email = $row["email"];
+
+    $query = mysqli_query($con, "UPDATE user SET password='$passw' WHERE email ='$email'");
+
+    if($query){
+        $query = mysqli_query($con, "DELETE FROM reset WHERE code = '$code' ");
+        exit("PASSWORD UPDATE");
+    }
+    else{
+        exit("SOMETHING WENT WRONG");
+    }
+
+}
+
+?>
+
+<form method="POST" action="">
+    <input type="password" name="password" placeholder="New Password">
+    <br>
+    <input type="submit" name="submit" value="Update password">
+</form>
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 

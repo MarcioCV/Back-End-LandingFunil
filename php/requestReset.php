@@ -108,7 +108,6 @@ if(isset($_POST ["email"])){
                 </form>
                 <h5 class="h-5">Já tem cadastro?
                     <a href="../html/login.php"> Entrar </a>
-                    <a href="../html/reset_password.php"> Entrar </a>
                 </h5>
               
         </div>
