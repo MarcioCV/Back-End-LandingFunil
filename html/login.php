@@ -59,7 +59,7 @@
                                     echo '<p class="paragraph" style="color: red !important;">Troca de senha falhou, tente novamente!</p>';
                                 }
                                 if($_GET["erro"] == 3){
-                                    echo '<p class="paragraph" style="color: green !important;">Email enviado!</p>';
+                                    echo '<p class="paragraph" style="color: green !important;">Email enviado com sucesso!</p>';
                                 }
                             }
                         ?>

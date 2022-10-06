@@ -122,12 +122,14 @@ label {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 .h-5{
     display: flex;
     justify-content: center;
     color: #fff;
     
 }
+
 
 .li_nav {
     margin-left: 50px;
