@@ -26,10 +26,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <link rel="icon" href='../img/icon/logorenda.svg'>
-        <link rel="stylesheet" href="../sass/css/dashbord.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_600.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_700.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_800.css">
+        <link rel="stylesheet" href="../css/dashbord.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_600.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_700.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_800.css">
         <title>Inicio</title>
     </head>
 </head>

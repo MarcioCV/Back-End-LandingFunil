@@ -4,7 +4,7 @@
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['password']))
     {
             // Acessar
-        include_once("../process/conn.php");
+        include_once("../connection/conn.php");
         $email = $_POST['email'];
         $password = $_POST['password'];
         $password_crypt = md5($password);

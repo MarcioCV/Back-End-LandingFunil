@@ -21,4 +21,3 @@ CREATE TABLE reset(
     code VARCHAR(225),
     email VARCHAR(225)
 );
-

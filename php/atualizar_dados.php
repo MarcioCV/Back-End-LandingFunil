@@ -1,5 +1,5 @@
 <?php
-    include_once("../process/conn.php");
+    include_once("../connection/conn.php");
     session_start();
 
     if(isset($_POST['submit']))
@@ -21,7 +21,6 @@
         $_SESSION['telegram'] = $tg_group;
         $_SESSION['binance'] = $binance;
         $_SESSION['royalq'] = $link_royalq;
-
     }
 
     header('Location: ../page/dados.php');

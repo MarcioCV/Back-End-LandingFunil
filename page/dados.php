@@ -21,12 +21,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" href='../img/icon/logorenda.svg'>
-        <link rel="stylesheet" href="../sass/css/dashbord.css">
-        <link rel="stylesheet" href="../sass/css/dados.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_600.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_700.css">
-        <link rel="stylesheet" href="../sass/mobile/responsive_800.css">
+        <link rel="stylesheet" href="../img/icon/logorenda.svg">
+        <link rel="stylesheet" href="../css/dashbord.css">
+        <link rel="stylesheet" href="../css/dados.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_600.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_700.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_800.css">
         <title>Meus Dados</title>
     </head>
 </head>
@@ -41,8 +41,8 @@
                         <span id="hamburger"></span>
                     </button>
                     <ul id="menu" role="menu">
-                        <li><a href="../page/back_office.html">Inicio</a></li>
-                        <li><a href="../page/dados.html">Meus Dados</a></li>
+                        <li><a href="../page/system.php">Inicio</a></li>
+                        <li><a href="../page/dados.php">Meus Dados</a></li>
                     </ul>
             </nav>
         </div>
@@ -61,7 +61,7 @@
         <ul class="nav_list">
 
             <li>
-                <a href="../page/back_office.html">
+                <a href="../page/system.php">
                     <i class='bx bx-grid-alt' ></i>
                     <span class="links_name">Inicio</span>
                     <span class="toolipe">Inicio</span>
@@ -71,7 +71,7 @@
             
 
             <li>
-                <a href="../page/dados.html">
+                <a href="../page/dados.php">
                     <i class='bx bx-user' ></i>
                     <span class="links_name">Meus Dados</span>
                     <span class="toolipe">Meus Dados</span>

@@ -1,5 +1,5 @@
 <?php
-    include_once("../process/config.php");
+    include_once("../connection/config.php");
 
  if(!isset($_GET["code"])){ // variavel de codigo 
     header('Location: ../html/login.php');
