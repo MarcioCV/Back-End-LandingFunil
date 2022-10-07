@@ -31,6 +31,7 @@
         {
             $row = $result -> fetch_row();
             $_SESSION['email'] = $email;
+            $_SESSION['email'] = $email;
             $_SESSION['name'] = $row[1];
             $_SESSION['phone'] = $row[2];
             $_SESSION['profile_pictures'] = $row[5];
@@ -38,6 +39,7 @@
             $_SESSION['telegram'] = $row[7];
             $_SESSION['royalq'] =  $row[8];
             $_SESSION['binance'] = $row[9];
+            $_SESSION['id'] = $row[0];
             
             header("Location:../page/system.php");
         }

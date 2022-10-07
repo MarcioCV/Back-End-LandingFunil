@@ -104,7 +104,7 @@
                 <div class="main-text">
                     Seu link de verificação é:
                 </div>
-                <a class="links" href="<?= $_SESSION["royalq"]?>"><?= $_SESSION["royalq"]?></a>
+                <a class="links" href="<?="http://localhost/Back-End-LandingFunil/front-end/index.php?id=".$_SESSION["id"]?>">http://localhost/Back-End-LandingFunil/front-end/index.php?id=<?= $_SESSION["id"]?></a>
             </div>
         </div>
     </div>

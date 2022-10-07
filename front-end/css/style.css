@@ -518,9 +518,12 @@ a {
 .button_wpp{
     background:rgb(72, 200, 88) !important;
 }
-.foto_mentor{
-    max-width: 235px;
+
+.foto_mentor {
+    /* max-width: 281px; */
+    width: 235px;
     border-radius: 210px;
+    height: 235px;
 }
 
 .borda_mentor{

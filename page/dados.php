@@ -98,7 +98,7 @@
                         <input class="form-control" type="name" name="name" required placeholder=" Fulano de Tal" value="<?=$_SESSION['name']?>">
                         <p><label for="email">E-mail</label>
                             <input class="form-control" type="email" name="email" required
-                                placeholder=" fulanodetal@outlook.com" value="<?=$_SESSION["email"]?>">
+                                placeholder=" fulanodetal@outlook.com" value="<?=$_SESSION["email"]?>" disabled>
                         <p><label for="phone">WhastApp</label>
                             <input class="form-control" type="tel" name="phone" required placeholder=" (41)70707070" value="<?=$_SESSION["phone"]?>">
                         <p><label for="text">Link RoyalQ</label>

@@ -1,3 +1,24 @@
+<?php
+    include_once("../connection/conn.php");
+    $id = $_GET['id'];
+
+    $sql = "SELECT * FROM user WHERE id = '$id'";
+
+    $result = $conn->query($sql);
+
+    if(mysqli_num_rows($result)>= 1)
+    {    
+        $row = $result ->fetch_row();
+        $name = $row[1];
+        $phone = $row[2];
+        $email = $row[3];
+        $profile = $row[5];
+        $whats = $row[6];
+        $telegram = $row[7];
+        $royaq = $row[8];
+        $binance = $row[9];
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -142,7 +163,7 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="div-buttons">
-                    <button class="button-gradient"><a href="https://raqsy.com/s/QSK59" target="_blank">BAIXAR
+                    <button class="button-gradient"><a href="<?=$royaq?>" target="_blank">BAIXAR
                             APP</a></button>
                     <button class="button-transparent"><a>SAIBA MAIS</a></button>
                 </div>
@@ -622,8 +643,8 @@
         </div>
 
         <div class="div_btn_binance">
-            <button class="button-gradient"><a href="https://www.binance.com/pt-BR">CADASTRAR NA BINANCE</a></button>
-            <button class="button-transparent"><a href="https://raqsy.com/s/QSK59">DOWNLOAD DO ROBÔ</a></button>
+            <button class="button-gradient"><a href="<?=$binance?>">CADASTRAR NA BINANCE</a></button>
+            <button class="button-transparent"><a href="<?=$royaq?>">DOWNLOAD DO ROBÔ</a></button>
         </div>
 
 
@@ -631,22 +652,22 @@
 
     <div class="mentor" id="contatos">
         <div class="button_border borda_mentor">
-            <img src="img/ronald.jpg" alt="" class="foto_mentor">
+            <img src="<?=$profile?>" alt="" class="foto_mentor">
         </div>
         <div>
-            <h2>Ronald <b>Christopher</b></h2>
+            <h2><b><?=$name?></b></h2>
         </div>
         <div class="button_mentor">
             <button class="button-gradient button_telegram">
                 <img src="https://cdn.worldvectorlogo.com/logos/telegram-1.svg" alt="" style="max-width: 50px;"> <a
-                    href="https://t.me/+4TlmMZOVU-RhMTEx" target="_blank">ENTRE PARA O GRUPO DO TELEGRAM E CONHEÇA A
+                    href="<?=$telegram?>" target="_blank">ENTRE PARA O GRUPO DO TELEGRAM E CONHEÇA A
                     MINHA ESTRATÉGIA!</a>
             </button>
             <button class="button-gradient button_telegram button_wpp"><img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
                     alt="" style="max-width: 50px;">
                 <div class="mentor_mobile" style="width: 100%"><a
-                        href="https://wa.me/5541998471342?text=Olá%20Ronald%20quero%20mais%20informações%20sobre%20o%20robo%20RoyalQ"
+                        href="<?=$whats?>"
                         target="_blank"> CONHEÇA SEU MENTOR</a></div>
             </button>
         </div>
