@@ -21,8 +21,6 @@
         height: 68px;
     }
 
-
-
     #menu {
         display: flex;
         list-style: none;
@@ -245,7 +243,8 @@
         background: transparent;
         padding: 9px;
         height: 48px;
-        width: 84vw;
+        width: 83vw;
+        margin-left: 0px;
         color: #fff;
     }
 
