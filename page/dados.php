@@ -119,7 +119,7 @@
                         </p>
                         <p><label for="text"> Foto de perfil</label>
                             <input class="form-control" type="text" name="profile" required
-                                value="<?php if(isset($_SESSION["profile_pictures"])){echo $_SESSION["profile_pictures"] .'"';}else{echo '" placeholder="Cole aqui sua foto"';}?>>
+                                value="<?php if(isset($_SESSION["profile"])){echo $_SESSION["profile"] .'"';}else{echo '" placeholder="Cole aqui sua foto"';}?>>
                         </p>
                         <div class="button">
                             <p><button class="btn" type="submit" name="submit">Salvar</button></p>
