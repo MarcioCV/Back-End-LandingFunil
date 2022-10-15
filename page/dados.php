@@ -24,10 +24,10 @@
         <link rel="icon" href="../img/icon/logorenda.svg">
         <link rel="stylesheet" href="../css/dashbord.css">
         <link rel="stylesheet" href="../css/dados.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_300.css">
         <link rel="stylesheet" href="../css/mobile/responsive_back_end_600.css">
         <link rel="stylesheet" href="../css/mobile/responsive_back_end_700.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_back_end_800.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_back_end_1920.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_2560.css">
         <title>Meus Dados</title>
     </head>
 </head>
@@ -123,25 +123,8 @@
                     </form>
                 </div>
             </div>
-           
-                <div class="container_profil">
-                    <div class="input_all">
-                        <form method="POST">
-                            <h3 class="h-3">Foto de Perfil</h3>
-                          <input type="file" name="arquivo" id="arquivo">
-                            <h4 class="h-4">Remover foto</h4>
-                            <div class="Photograph">
-                                <img src="../img/blank-profile-picture-973460_1280.webp" class="profil_Photograph">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
-    </div>
-    
     <script src="../js/script.js"></script>
 </body>
 </html>

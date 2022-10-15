@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="../css/mobile/responsive_back_end_600.css">
         <link rel="stylesheet" href="../css/mobile/responsive_back_end_700.css">
         <link rel="stylesheet" href="../css/mobile/responsive_back_end_800.css">
-        <link rel="stylesheet" href="../css/mobile/responsive_back_end_1920.css">
+        <link rel="stylesheet" href="../css/mobile/responsive_back_end_300.css">
         <title>System</title>
     </head>
 </head>
