@@ -104,18 +104,22 @@
                             <input class="form-control" type="tel" name="phone" required placeholder=" (41)70707070" value="<?=$_SESSION["phone"]?>">
                         <p><label for="text"> Link RoyalQ</label>
                             <input class="form-control" type="text" name="royalq" required
-                                placeholder=" www.royalq.com/fulanodetal" value="<?php if(isset($_SESSION["royalq"])){echo $_SESSION["royalq"];}else{echo "Cole aqui seu link RoyalQ";}?>">
+                                 value="<?php if(isset($_SESSION["royalq"])){echo $_SESSION["royalq"] .'"';}else{echo '" placeholder="Cole aqui seu link de indicação da RoyalQ"';}?>">
                         <p><label for="text"> Link Binance</label>
                             <input class="form-control" type="text" name="binance" required
-                                placeholder=" www.binance.com/fulanodetal" value="<?php if(isset($_SESSION["binance"])){echo $_SESSION["binance"];}else{echo "Cole aqui seu link Binance";}?>">
-                        </p>
+                                 value="<?php if(isset($_SESSION["binance"])){echo $_SESSION["binance"] .'"';}else{echo '" placeholder="Cole aqui seu link de indicação da Binance"';}?>">
+                        </p>    
                         <p><label for="text"> Link grupo Telegram</label>
                             <input class="form-control" type="text" name="telegram" required
-                                placeholder=" Telegram.fulanodetal.contato" value="<?php if(isset($_SESSION["telegram"])){echo $_SESSION["telegram"];}else{echo "Cole aqui seu link Telegram";}?>">
-                        </p>
+                                value="<?php if(isset($_SESSION["telegram"])){echo $_SESSION["telegram"] .'"';}else{echo '" placeholder="Cole aqui seu grupo do telegram"';}?>">
+                        </p>    
                         <p><label for="text"> Link grupo WhatsApp</label>
                             <input class="form-control" type="text" name="wp_group" required
-                                placeholder="https://chat.whatsapp.com/iddWdawiDNdw" value="<?php if(isset($_SESSION["whatsapp_group"])){echo $_SESSION["whatsapp_group"];}else{echo "Cole aqui seu link WhatsApp";}?>">
+                                value="<?php if(isset($_SESSION["whatsapp_group"])){echo $_SESSION["whatsapp_group"] .'"';}else{echo '" placeholder="Cole aqui seu wa.me"';}?>">
+                        </p>
+                        <p><label for="text"> Foto de perfil</label>
+                            <input class="form-control" type="text" name="profile" required
+                                value="<?php if(isset($_SESSION["profile_pictures"])){echo $_SESSION["profile_pictures"] .'"';}else{echo '" placeholder="Cole aqui sua foto"';}?>>
                         </p>
                         <div class="button">
                             <p><button class="btn" type="submit" name="submit">Salvar</button></p>
