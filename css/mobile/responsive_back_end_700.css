@@ -18,7 +18,8 @@
 
     .mynavbar {
         background-color: rgba(0, 0, 0, 0.9);
-        height: 68px;
+        height: 75px;
+        width: 85vh;
     }
 
     #menu {

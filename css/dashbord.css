@@ -174,12 +174,15 @@ html {
 }
 
 .homeContent h2 {
-  margin: 15px;
-  font-size: 25px;
-  font-weight: 400;
-  color: #fff;
+  margin:0px !important;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    width: 100vw;
 }
-.h-3{
+
+
+.h-3 {
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 0 !important;
@@ -279,18 +282,20 @@ html {
   padding: 20px;
   color: #fff;
 }
-.main{
+
+.main {
   display: flex;
-    font-size: 4vw;
-    background: linear-gradient(270deg, rgba(237, 114, 32, 1) 0%, rgba(209, 0, 106, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 44px;
-    font-size: 38px;
-    margin: 61px;
-    margin-bottom: 36px;
-    font-weight: bold;
+  font-size: 4vw;
+  background: linear-gradient(270deg, rgba(237, 114, 32, 1) 0%, rgba(209, 0, 106, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 44px;
+  font-size: 38px;
+  margin: 61px;
+  margin-bottom: 36px;
+  font-weight: bold;
 }
-.general{
-  display:none
+
+.general {
+  display: none
 }
