@@ -1,7 +1,7 @@
 <?php
   $host = "localhost"; 
   $user = "root";
-  $pass = "";
+  $pass = "mysql321";
   $db = "Funil_ronald";
   $port = 3306;
 

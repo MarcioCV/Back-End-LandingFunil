@@ -5,7 +5,7 @@
     header('Location: ../html/login.php');
 }
 
-$code = $_GET["code"]; // Url - variavel de codigo wda url
+$code = $_GET["code"]; // Url - variavel de codigo da url
 // echo $code;
 
 $getEmailQuery = mysqli_query($con, "SELECT email FROM reset WHERE code ='$code'");
@@ -52,7 +52,6 @@ if(isset($_POST["password"])){
     <link rel="stylesheet" href="../css/mobile/responsive_400.css">
     <link rel="stylesheet" href="../css/mobile/responsive_900.css">
     <link rel="icon" href='../img/icon/logorenda.svg'>
-
 </head>
 
 <body>
@@ -77,17 +76,16 @@ if(isset($_POST["password"])){
             </div>
         </div>
         </nav>
-    </header>
-
+    </header> 
     <div class="general">
         <div class="container">
             <div class="input_all">
                 <form method="POST" action="">
                     <h1 class="main"  style="color: #fff;font-weight: 100; align-items: center;">Alteraçao de senha</h1>
                     <span class="text-sub">Senha</span>
-                    <input class="form-control" type="password" name="password" required placeholder="****************">
+                    <input class="form-control" id="password" type="password" name="password" required placeholder="****************">
                     <span>Confirme a Senha</span>
-                    <input class="form-control" type="password" name="password" required placeholder="****************">
+                    <input class="form-control" type="password" id="confirmation_password" name="senha_confirma" required placeholder="****************">
                     <div class="button">
                         <input class="btn" type="submit" name="submit" value=" Update password ">
                     </div>
@@ -95,6 +93,7 @@ if(isset($_POST["password"])){
             </div>
         </div>
     </div>
+ <script src="../js/password.js"></script>
 </body>
 
 </html>

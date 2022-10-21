@@ -23,3 +23,6 @@ CREATE TABLE reset(
 );
 
 
+SELECT * FROM user;
+
+DROP DATABASE Funil_ronald;
