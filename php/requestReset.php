@@ -24,8 +24,8 @@ if(isset($_POST ["email"])){
         $mail->Host       = 'smtp.hostinger.com';                    
         $mail->SMTPAuth   = true;                                   
         $mail->Username   = 'suporte@infinitarenda.com.br';                   
-        $mail->Password   = 'oinnqhzicddzpxyk';                               
-        $mail->SMTPSecure = 'tls';            
+        $mail->Password   = '*Eusourico2022';                               
+        $mail->SMTPSecure = 'ssl';            
         $mail->Port       = 465;                                   
     
        
