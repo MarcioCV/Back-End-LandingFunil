@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../css/mobile/responsive_login_400.css">
     <link rel="stylesheet" href="../css/mobile/responsive_login_900.css">
     <link rel="icon" href='../img/icon/logorenda.svg'>
+    <script src="../js/script.js"></script>
+    
 </head>
 
 <body>
@@ -52,16 +54,24 @@
                         <p><label for="phone">Celular e DDD (com WhastsApp)</label>
                             <input class="form-control" type="text" name="phone" required placeholder="+1 582-262-5952" maxlength="20" >
                         <p><label for="password">Senha</label>
-                            <input class="form-control" type="password" name="password" required
+                            <input class="form-control" type="password" id="password" name="password" required
                                 placeholder=" *****************">
                         <p><label for="password">Repite Senha</label>
-                            <input class="form-control" type="password" name="confirm" required
+                            <input class="form-control" type="password" id="confirmation_password" name="confirmation_password" required
                                 placeholder=" ******************">
                         </p>
                         <div class="check-box">
                             <input type="checkbox" name="" id="">
                             <span>Eu li e aceito os <label class="termos">Termos de uso</label></span>
                         </div>
+                            <?php
+                           if(isset($_GET["erro"])){
+                            if($_GET["erro"] == 4){
+                                echo '<p class="paragraph" style="color: red !important; display: flex;
+                                justify-content: center;">Email já cadastrado ! Tente novamante!</p>';
+                            }
+                           }
+                        ?>
                         <div class="button">
                             <button class="btn" type="submit" name="submit">Cadastro</button>
                             
@@ -74,7 +84,7 @@
             </h5>
         </div>
     </header>
-    <script src="../js/script.js"></script>
+    <script src="../js/password.js"></script>
 </body>
 
 </html>

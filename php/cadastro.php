@@ -9,10 +9,18 @@ include_once("../connection/conn.php");
         $phone = $_POST['phone'];
         $password = $_POST['password'];
         $password_crypt = md5($password);
-        $result = mysqli_query($conn, "INSERT INTO user(name,email,phone,password) VALUES ('$name','$email','$phone','$password_crypt')");
+        $result = mysqli_query($conn, "SELECT id FROM user WHERE email = '$email'");
+        if(mysqli_num_rows($result)< 1){
+            $result = mysqli_query($conn, "INSERT INTO user(name,email,phone,password) VALUES ('$name','$email','$phone','$password_crypt')");
+            header('Location:../html/login.php');
+        }
+        else{
+            header('Location: ../html/registro.php?erro=4');
+        }
         
+    }else{
+        header('Location:../html/login.php');
     }
-
-    header('Location: ../html/login.php');
     die();
 ?>
+

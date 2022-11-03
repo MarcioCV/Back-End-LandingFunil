@@ -21,15 +21,15 @@ if(isset($_POST ["email"])){
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.gmail.com';                    
+        $mail->Host       = 'smtp.hostinger.com';                    
         $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'danimaltoc@gmail.com';                   
+        $mail->Username   = 'suporte@infinitarenda.com.br';                   
         $mail->Password   = 'oinnqhzicddzpxyk';                               
         $mail->SMTPSecure = 'tls';            
-        $mail->Port       = 587;                                   
+        $mail->Port       = 465;                                   
     
        
-        $mail->setFrom('danimaltoc@gmail.com', 'RendaInfinita');
+        $mail->setFrom('suporte@infinitarenda.com.br', 'RendaInfinita');
         $mail->addAddress("$emailTo");     //Add a recipient
         $mail->addReplyTo('no-reply@gmail.com', 'No reply');
     
