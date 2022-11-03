@@ -21,12 +21,12 @@ if(isset($_POST ["email"])){
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.hostinger.com';                    
+        $mail->Host       = 'smtp.gmail.com';                    
         $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'suporte@infinitarenda.com.br';                   
-        $mail->Password   = '*Eusourico2022';                               
-        $mail->SMTPSecure = 'ssl';            
-        $mail->Port       = 465;                                   
+        $mail->Username   = 'infinitarendasuporte@gmail.com';                   
+        $mail->Password   = 'vfmvrgcvybwcbbpa';                               
+        $mail->SMTPSecure = 'smtp';            
+        $mail->Port       = 587;                                   
     
        
         $mail->setFrom('suporte@infinitarenda.com.br', 'RendaInfinita');
