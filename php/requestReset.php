@@ -32,13 +32,14 @@ if(isset($_POST ["email"])){
         $mail->setFrom('suporte@infinitarenda.com.br', 'RendaInfinita');
         $mail->addAddress("$emailTo");     //Add a recipient
         $mail->addReplyTo('no-reply@gmail.com', 'No reply');
-    
+        
     
         $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]) . "/reset_password.php?code=$code";
         $mail->isHTML(true);                                 
-        $mail->Subject = 'Your password reset link';
-        $mail->Body    = "<h1> You requested a password reset </h1>
-                            Click <a href='$url'> this link </a> to do so";
+        $mail->Subject = 'Infinita Renda Troca de senha';
+        $mail->Body    = "<h1 style='background: rgba(209,0,106,1);'> Clique no link abaixo para cadastrar sua senha </h1>
+        Clique <a href='$url'> aqui </a> para trocar ";
+
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();
