@@ -103,7 +103,7 @@ if(isset($_POST ["email"])){
                     </div>
                     </div>
                     <div class="button">
-                        <button class="btn" type="submit" name="submit">Submit</a></button>
+                        <button class="btn" type="submit" name="submit">Enviar</a></button>
                     </div>
                 </form>
                 <h5 class="h-5">Já tem cadastro?
