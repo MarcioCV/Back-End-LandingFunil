@@ -1,23 +1,22 @@
 <?php
-    include_once("../connection/conn.php");
-    $id = $_GET['id'];
+include_once("../connection/conn.php");
+$id = $_GET['id'];
 
-    $sql = "SELECT * FROM user WHERE id = '$id'";
+$sql = "SELECT * FROM user WHERE id = '$id'";
 
-    $result = $conn->query($sql);
+$result = $conn->query($sql);
 
-    if(mysqli_num_rows($result)>= 1)
-    {    
-        $row = $result ->fetch_row();
-        $name = $row[1];
-        $phone = $row[2];
-        $email = $row[3];
-        $profile = $row[5];
-        $whats = $row[6];
-        $telegram = $row[7];
-        $royaq = $row[8];
-        $binance = $row[9];
-    }
+if (mysqli_num_rows($result) >= 1) {
+    $row = $result->fetch_row();
+    $name = $row[1];
+    $phone = $row[2];
+    $email = $row[3];
+    $profile = $row[5];
+    $whats = $row[6];
+    $telegram = $row[7];
+    $royaq = $row[8];
+    $binance = $row[9];
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -43,11 +42,9 @@
         <link rel="stylesheet" href="css/responsivo900.css">
         <link rel="stylesheet" href="css/responsivo1200.css">
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
     </head>
 </head>
@@ -122,8 +119,7 @@
             <div class="nav-items">
                 <img src="./img/icon/rendainfinitanovalogo.svg" id="logo">
                 <nav id="nav">
-                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                        aria-expanded="false">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                         <span id="hamburger"></span>
                     </button>
                     <ul id="menu" role="menu">
@@ -157,13 +153,10 @@
                     </p>
                 </div>
                 <div class="assistant_iframe">
-                    <iframe id="iframe_mobile" width="900" height="500" src="https://www.youtube.com/embed/vPqYj9PPfew"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe id="iframe_mobile" width="900" height="500" src="https://www.youtube.com/embed/vPqYj9PPfew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="div-buttons">
-                    <button class="button-gradient"><a href="<?=$royaq?>" target="_blank">BAIXAR
+                    <button class="button-gradient"><a href="<?= $royaq ?>" target="_blank">BAIXAR
                             APP</a></button>
                     <button class="button-transparent"><a>SAIBA MAIS</a></button>
                 </div>
@@ -175,18 +168,14 @@
                 </div>
 
             </div>
-            <iframe id="iframe_desktop" width="900" height="500" src="https://www.youtube.com/embed/vPqYj9PPfew"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <iframe id="iframe_desktop" width="900" height="500" src="https://www.youtube.com/embed/vPqYj9PPfew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <div class="robo" id="robo">
         <div class="apresentation">
             <div class="apr-column1 ">
                 <div class="apr-line apr_mobile_">
-                    <img style="max-width: 38px; height:86px; margin-right: 13px;"
-                        src="./img/icon/cellphone_icon_rend.svg" id="phone_mobile">
+                    <img style="max-width: 38px; height:86px; margin-right: 13px;" src="./img/icon/cellphone_icon_rend.svg" id="phone_mobile">
                     <div class="apresentation-text">
                         <h2 id='mobile_column_1'>
                             Mobilidade e praticidade
@@ -208,8 +197,7 @@
                     </div>
                 </div>
                 <div class="apr-line apr_mobile_">
-                    <img style="max-width: 49px;  height:86px; margin-right: 13px;"
-                        src="./img/icon/money_sleep_icon_rend.svg" id="money_mobile">
+                    <img style="max-width: 49px;  height:86px; margin-right: 13px;" src="img/icon/money_sleep_icon_rend.svg" id="money_mobile">
                     <div class="apresentation-text">
                         <h2 id='mobile_column_1'>
                             Ganhe dinheiro dormindo
@@ -240,8 +228,7 @@
 
             <div class="apr-column3">
                 <div class="apr-line apr_mobile_one">
-                    <img style="max-width: 50px;  height:86px; margin-right: 8px;"
-                        src="./img/icon/trader_icon_rend.svg">
+                    <img style="max-width: 50px;  height:86px; margin-right: 8px;" src="./img/icon/trader_icon_rend.svg">
                     <div class="apresentation-text_l">
 
                         <h2 id='mobile_column_1_l'>
@@ -254,8 +241,7 @@
                     </div>
                 </div>
                 <div class="apr-line apr_mobile_one">
-                    <img style="max-width: 50px;  height:86px; margin-right: 8px;"
-                        src="./img/icon/seguro_icon_rend.svg">
+                    <img style="max-width: 50px;  height:86px; margin-right: 8px;" src="./img/icon/seguro_icon_rend.svg">
                     <div class="apresentation-text_l">
                         <h2 id='mobile_column_1_l'>
                             Segurança
@@ -268,8 +254,7 @@
                     </div>
                 </div>
                 <div class="apr-line apr_mobile_one">
-                    <img style="max-width: 50px;  height:86px; margin-right: 8px;"
-                        src="./img/icon/rocket_icon_rend.svg">
+                    <img style="max-width: 50px;  height:86px; margin-right: 8px;" src="./img/icon/rocket_icon_rend.svg">
                     <div class="apresentation-text_l">
                         <h2 id='mobile_column_1_l'>
                             Empreenda com a ferramenta
@@ -297,9 +282,7 @@
                                 <span style="margin-bottom: 15px;">Emerson</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -311,9 +294,7 @@
                                 <span style="margin-bottom: 15px;">Ezequias</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -325,9 +306,7 @@
                                 <span style="margin-bottom: 15px;">Felipe</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -339,9 +318,7 @@
                                 <span style="margin-bottom: 15px;">Gabriel</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
                 <div class="carousel-desktop">
@@ -355,9 +332,7 @@
                                 <span style="margin-bottom: 15px;">Johnatas</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -369,9 +344,7 @@
                                 <span style="margin-bottom: 15px;">Leandro</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -383,9 +356,7 @@
                                 <span style="margin-bottom: 15px;">Reinaldo</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -397,9 +368,7 @@
                                 <span style="margin-bottom: 15px;">Tamara</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
                 <!-- Mobile VVVVVVVVVVVVVVVVVVVVVVVVVVVV-->
@@ -414,9 +383,7 @@
                                 <span style="margin-bottom: 15px;">Emerson</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -428,9 +395,7 @@
                                 <span style="margin-bottom: 15px;">Ezequias</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
 
@@ -445,9 +410,7 @@
                                 <span style="margin-bottom: 15px;">Felipe</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -459,9 +422,7 @@
                                 <span style="margin-bottom: 15px;">Gabriel</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
 
@@ -476,9 +437,7 @@
                                 <span style="margin-bottom: 15px;">Johnatas</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -490,9 +449,7 @@
                                 <span style="margin-bottom: 15px;">Leandro</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
 
@@ -507,9 +464,7 @@
                                 <span style="margin-bottom: 15px;">Reinaldo</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                     <div class="flex_column">
                         <div class="card">
@@ -521,21 +476,17 @@
                                 <span style="margin-bottom: 15px;">Tamara</span>
                             </div>
                         </div>
-                        <img class="stars"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png"
-                            alt="">
+                        <img class="stars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
                     </div>
                 </div>
 
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -611,40 +562,30 @@
         </h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <iframe width="900" height="500" src="https://www.youtube.com/embed/yA1QFHpZKzs"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="900" height="500" src="https://www.youtube.com/embed/yA1QFHpZKzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item">
-                    <iframe width="900" height="500" src="https://www.youtube.com/embed/gLwtXtvHB84"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="900" height="500" src="https://www.youtube.com/embed/gLwtXtvHB84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
         <div class="div_btn_binance">
-            <button class="button-gradient"><a href="<?=$binance?>">CADASTRAR NA BINANCE</a></button>
-            <button class="button-transparent"><a href="<?=$royaq?>">DOWNLOAD DO ROBÔ</a></button>
+            <button class="button-gradient"><a href="<?= $binance ?>">CADASTRAR NA BINANCE</a></button>
+            <button class="button-transparent"><a href="<?= $royaq ?>">DOWNLOAD DO ROBÔ</a></button>
         </div>
 
 
@@ -652,23 +593,18 @@
 
     <div class="mentor" id="contatos">
         <div class="button_border borda_mentor">
-            <img src="<?=$profile?>" alt="" class="foto_mentor">
+            <img src="<?= $profile ?>" alt="" class="foto_mentor">
         </div>
         <div>
-            <h2><b><?=$name?></b></h2>
+            <h2><b><?= $name ?></b></h2>
         </div>
         <div class="button_mentor">
             <button class="button-gradient button_telegram">
-                <img src="https://cdn.worldvectorlogo.com/logos/telegram-1.svg" alt="" style="max-width: 50px;"> <a
-                    href="<?=$telegram?>" target="_blank">ENTRE PARA O GRUPO DO TELEGRAM E CONHEÇA A
+                <img src="https://cdn.worldvectorlogo.com/logos/telegram-1.svg" alt="" style="max-width: 50px;"> <a href="<?= $telegram ?>" target="_blank">ENTRE PARA O GRUPO DO TELEGRAM E CONHEÇA A
                     MINHA ESTRATÉGIA!</a>
             </button>
-            <button class="button-gradient button_telegram button_wpp"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
-                    alt="" style="max-width: 50px;">
-                <div class="mentor_mobile" style="width: 100%"><a
-                        href="<?=$whats?>"
-                        target="_blank"> CONHEÇA SEU MENTOR</a></div>
+            <button class="button-gradient button_telegram button_wpp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="" style="max-width: 50px;">
+                <div class="mentor_mobile" style="width: 100%"><a href="<?= $whats ?>" target="_blank"> CONHEÇA SEU MENTOR</a></div>
             </button>
         </div>
     </div>

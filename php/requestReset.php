@@ -37,7 +37,7 @@ if(isset($_POST ["email"])){
         $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]) . "/reset_password.php?code=$code";
         $mail->isHTML(true);                                 
         $mail->Subject = 'Infinita Renda Troca de senha';
-        $mail->Body    = "<h1 style='background: rgba(209,0,106,1);'> Clique no link abaixo para cadastrar sua senha </h1>
+        $mail->Body    = "<h1 style='color: rgba(209,0,106,1);'> Clique no link abaixo para cadastrar sua senha </h1>
         Clique <a href='$url'> aqui </a> para trocar ";
 
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
@@ -104,7 +104,7 @@ if(isset($_POST ["email"])){
                     </div>
                     </div>
                     <div class="button">
-                        <button class="btn" type="submit" name="submit">Submit</a></button>
+                        <button class="btn" type="submit" name="submit">Enviar</a></button>
                     </div>
                 </form>
                 <h5 class="h-5">Já tem cadastro?

@@ -12,7 +12,7 @@
         $tg_group = $_POST['telegram'];
         $profile = $_POST['profile'];
 
-        $result = mysqli_query($conn, "UPDATE user SET name = '$name', phone = '$phone', whatsapp_group = '$wp_group', telegram = '$tg_group', link_royalQ = '$link_royalq', binance = '$binance', profile_pictures = '$profile'");
+        $result = mysqli_query($conn, "UPDATE usuario SET name = '$name', phone = '$phone', whatsapp_group = '$wp_group', telegram = '$tg_group', link_royalQ = '$link_royalq', binance = '$binance', profile_pictures = '$profile'");
         
         $_SESSION['name'] = $name;
         $_SESSION['phone'] = $phone;
@@ -25,4 +25,3 @@
 
     header('Location: ../page/dados.php');
     die();
-?>
