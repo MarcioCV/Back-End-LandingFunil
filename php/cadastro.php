@@ -22,5 +22,5 @@ include_once("../connection/conn.php");
         header('Location:../html/login.php');
     }
     die();
-?>
+
 
