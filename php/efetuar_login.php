@@ -1,54 +1,10 @@
 <?php
-class Session
-{
-    public function __construct()
-    {
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-    }
 
-    /**
-     * function get
-     *
-     * @param string $key
-     * @param mixed $default
-     *
-     * @return mixed
-     */
-    public function get(string $key, $default = null): mixed
-    {
-        return $_SESSION[$key] ?? $default ?? null;
-    }
+use App\Core\Session;
 
-    /**
-     * function set
-     *
-     * @param string $key
-     * @param mixed $value
-     *
-     * @return void
-     */
-    public function set(string $key, mixed $value): void
-    {
-        $_SESSION[$key] = $value;
-    }
-
-    /**
-     * function forget
-     *
-     * @param string $key
-     *
-     * @return void
-     */
-    public function forget(string $key): void
-    {
-        unset($_SESSION[$key]);
-    }
-}
+require_once __DIR__ . '/../App/Core/Session.php';
 
 $sessao = new Session();
-
 
 // print_r($_REQUEST); é usada para coletar dados após o envio de um formulário HTML.
 if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['password'])) {
