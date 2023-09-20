@@ -9,44 +9,50 @@ require '../PHPMailer/src/SMTP.php';
 require '../connection/config.php';
 
 if(isset($_POST ["email"])){
-
     $emailTo = $_POST["email"];
-    
-    $code = uniqid(true); // id exclusivo
-    $query = mysqli_query($con, "INSERT INTO reset(code,email) VALUES('$code','$emailTo')");
-    if(!$query) {
-        exit("error");
-    }
 
-    $mail = new PHPMailer(true);
-    try {
-        $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.gmail.com';                    
-        $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'infinitarendasuporte@gmail.com';                   
-        $mail->Password   = 'vfmvrgcvybwcbbpa';                               
-        $mail->SMTPSecure = 'smtp';            
-        $mail->Port       = 587;                                   
-    
-       
-        $mail->setFrom('suporte@infinitarenda.com.br', 'RendaInfinita');
-        $mail->addAddress("$emailTo");     //Add a recipient
-        $mail->addReplyTo('no-reply@gmail.com', 'No reply');
+    $query = mysqli_query($con, "SELECT id FROM usuario WHERE email = '$emailTo'");
+    if(mysqli_num_rows($query) > 0){
+        $code = uniqid(true); // id exclusivo
+        $query = mysqli_query($con, "INSERT INTO reset(code,email) VALUES('$code','$emailTo')");
+        if(!$query) {
+            exit("error");
+        }
+
+        $mail = new PHPMailer(true);
+        try {
+            $mail->isSMTP();                                            
+            $mail->Host       = 'smtp.hostinger.com';                    
+            $mail->SMTPAuth   = true;                                   
+            $mail->Username   = 'suporte@infinitarenda.com.br';                   
+            $mail->Password   = 'suporteRenda@1000';                               
+            $mail->SMTPSecure = 'smtp';            
+            $mail->Port       = 587;                                   
         
-    
-        $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]) . "/reset_password.php?code=$code";
-        $mail->isHTML(true);                                 
-        $mail->Subject = 'Infinita Renda Troca de senha';
-        $mail->Body    = "<h1 style='color: rgba(209,0,106,1);'> Clique no link abaixo para cadastrar sua senha </h1>
-        Clique <a href='$url'> aqui </a> para trocar ";
+        
+            $mail->setFrom('suporte@infinitarenda.com.br', 'RendaInfinita');
+            $mail->addAddress("$emailTo");     //Add a recipient
+            $mail->addReplyTo('no-reply@infinitarenda.com.br', 'No reply');
+            
+        
+            $url = "http://" . $_SERVER["HTTP_HOST"] . dirname($_SERVER["PHP_SELF"]) . "/reset_password.php?code=$code";
+            $mail->isHTML(true);                                 
+            $mail->Subject = 'Infinita Renda Troca de senha';
+            $mail->Body    = "<h1 style='color: rgba(209,0,106,1);'> Clique no link abaixo para cadastrar sua senha </h1>
+            Clique <a href='$url'> aqui </a> para trocar ";
 
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    
-        $mail->send();
-        header('Location: ../html/login.php?erro=3');
-    }catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        
+            $mail->send();
+            header('Location: ../html/login.php?erro=3');
+        }catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
     }
+    else{
+        header("Location: requestReset.php?erro=1");
+    }
+    
     exit(); // Sem a possibilidade de solicitar outra solicitacao de  reset password
 }
 ?>
@@ -72,26 +78,6 @@ if(isset($_POST ["email"])){
 
 <body>
     <header id="header">
-        <div class="mynavbar">
-            <div class="nav-items">
-                <img src="../img/rendainfinitanovalogo.svg" id="logo">
-                <nav id="nav">
-                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                        aria-expanded="false">
-                        <span id="hamburger"></span>
-                    </button>
-                    <ul id="menu" role="menu">
-                        <li class="li_nav"><a href="#home" class="a_nav">HOME</a></li>
-                        <li class="li_nav"><a href="#robo" class="a_nav">VANTAGENS</a></li>
-                        <li class="li_nav"><a href="#depoimentos" class="a_nav">DEPOIMENTOS</a></li>
-                        <li class="li_nav"><a href="#faq" class="a_nav">FAQ</a></li>
-                        <li class="li_nav"><a href="#tutoriais" class="a_nav">TUTORIAIS</a></li>
-                        <li class="li_nav"><a href="#contatos" class="a_nav">CONTATOS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        </nav>
         <div class="general">
             <div class="container">
                 <div class="input_all">
@@ -99,8 +85,15 @@ if(isset($_POST ["email"])){
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p class="paragraph">Você pode redefinir sua senha aqui</p>
                         <p><label for="email">E-mail</label></p>
-                        <input class="form-control" type="email" name="email" required placeholder=" email@gmail.com" autocomplete="off">
+                        <input class="form-control" type="email" name="email" required placeholder=" email@email.com" autocomplete="off">
                         </p>
+                        <?php
+                        if(isset($_GET["erro"])){
+                            if($_GET["erro"] == 1){
+                                echo "<h4 style='color:red; margin-top: 5px;'>Email incorreto!</h2>";
+                            }
+                        }
+                        ?>
                     </div>
                     </div>
                     <div class="button">

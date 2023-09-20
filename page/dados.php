@@ -99,23 +99,15 @@
                         <input class="form-control" type="name" name="name" required placeholder=" email@gmail.com" value="<?=$_SESSION['name']?>">
                         <p><label for="email"> E-mail</label>
                             <input class="form-control" type="email" name="email" required
-                                placeholder="fulanodetal@outlook.com" value="<?=$_SESSION["email"]?>" disabled>
+                                placeholder="fulanodetal@outlook.com" value="<?=$_SESSION["email"]?>" readonly>
                         <p><label for="phone"> WhastApp</label>
                             <input class="form-control" type="tel" name="phone" required placeholder=" (41)70707070" value="<?=$_SESSION["phone"]?>">
-                        <p><label for="text"> Link RoyalQ</label>
+                        <p><label for="text"> Seu link Cointech2u</label>
                             <input class="form-control" type="text" name="royalq" required
-                                 value="<?php if(isset($_SESSION["royalq"])){echo $_SESSION["royalq"] .'"';}else{echo '" placeholder="Cole aqui seu link de indicação da RoyalQ"';}?>">
-                        <p><label for="text"> Link Binance</label>
-                            <input class="form-control" type="text" name="binance" required
-                                 value="<?php if(isset($_SESSION["binance"])){echo $_SESSION["binance"] .'"';}else{echo '" placeholder="Cole aqui seu link de indicação da Binance"';}?>">
-                        </p>    
-                        <p><label for="text"> Link grupo Telegram</label>
-                            <input class="form-control" type="text" name="telegram" required
-                                value="<?php if(isset($_SESSION["telegram"])){echo $_SESSION["telegram"] .'"';}else{echo '" placeholder="Cole aqui seu grupo do telegram"';}?>">
-                        </p>    
-                        <p><label for="text"> Link grupo WhatsApp</label>
+                                 value="<?php if(isset($_SESSION["royalq"])){echo $_SESSION["royalq"] .'"';}else{echo '" placeholder="Cole aqui seu link de indicação da Cointech2u"';}?>"></p>
+                        <p><label for="text"> Link do seu grupo do WhatsApp</label>
                             <input class="form-control" type="text" name="wp_group" required
-                                value="<?php if(isset($_SESSION["whatsapp_group"])){echo $_SESSION["whatsapp_group"] .'"';}else{echo '" placeholder="Cole aqui seu wa.me"';}?>">
+                                value="<?php if(isset($_SESSION["whatsapp_group"])){echo $_SESSION["whatsapp_group"] .'"';}else{echo '" placeholder="Cole aqui seu convite para o grupo"';}?>">
                         </p>
                         <p><label for="text"> Foto de perfil</label>
                             <input class="form-control" type="text" name="profile" required

@@ -1,3 +1,10 @@
+<?php
+    if(isset($_COOKIE["user_login"]) && isset($_COOKIE["user_password"])){ 
+        if(strlen($_COOKIE["user_login"])>0 && strlen($_COOKIE["user_password"]) > 0){
+            header('Location: ../php/efetuar_login.php');
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,26 +27,6 @@
 
 <body>
     <header id="header">
-        <div class="mynavbar">
-            <div class="nav-items">
-                <img src="../img/rendainfinitanovalogo.svg" id="logo">
-                <nav id="nav">
-                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                        aria-expanded="false">
-                        <span id="hamburger"></span>
-                    </button>
-                    <ul id="menu" role="menu">
-                        <li class="li_nav"><a href="#home" class="a_nav">HOME</a></li>
-                        <li class="li_nav"><a href="#robo" class="a_nav">VANTAGENS</a></li>
-                        <li class="li_nav"><a href="#depoimentos" class="a_nav">DEPOIMENTOS</a></li>
-                        <li class="li_nav"><a href="#faq" class="a_nav">FAQ</a></li>
-                        <li class="li_nav"><a href="#tutoriais" class="a_nav">TUTORIAIS</a></li>
-                        <li class="li_nav"><a href="#contatos" class="a_nav">CONTATOS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        </nav>
         <div class="general">
             <div class="container">
                 <div class="input_all">
@@ -54,7 +41,7 @@
                         <?php
                             if(isset($_GET["erro"])){
                                 if($_GET["erro"] == 1){
-                                    echo '<p class="paragraph" style="color: red !important;">email ou senha incorretos, tente novamente!</p>';
+                                    echo '<p class="paragraph" style="color: red !important;">Email ou senha incorretos, tente novamente!</p>';
                                 }
                                 if($_GET["erro"] == 2){
                                     echo '<p class="paragraph" style="color: red !important;">Troca de senha falhou, tente novamente!</p>';
@@ -65,7 +52,7 @@
                             }
                         ?>
                         <div class="check-box">
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="keep-login" id="keep-login">
                             <span>Mantenha-me conectado </span>
                         </div>
                         <div class="button">
@@ -74,8 +61,8 @@
                     </form>
                 </div>
             </div>
-            <h5 class="h-5"><a href="../php/requestReset.php">Esqueci minha senha</a></h5>
-            <h5 class="h-5">Ainda não tem cadastro ? <a href="../html/registro.php"> Cadastro </a></h5>
+            <h5 class="h-5"><a href="../php/requestReset.php" style="margin-top:10px">Esqueci minha senha</a></h5>
+            <h5 class="h-5" >Ainda não tem cadastro ? <a href="../html/registro.php" style="margin-left:10px;"> Cadastro </a></h5>
         </div>
     </header>
     <script src="../js/script.js"></script>

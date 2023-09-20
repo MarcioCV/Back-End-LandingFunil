@@ -176,11 +176,10 @@ a {
 }
 
 .button-gradient {
-    background: linear-gradient(270deg, rgba(205,88,48,1) 0%, rgba(182,0,77,1) 100%);
-    color: #fff;
+    background-color: #6DC047;
     border-radius: 50px;
     border: 0;
-    width: 13vw;
+    width: 100%;
     height: 4vw;
     font-size: 1.3vw;
     font-weight: 600 !important;
@@ -200,6 +199,7 @@ a {
     font-size: 3vw;
     line-height: 90%;
     font-weight: 600;
+    text-align: center;
 }
 
 
@@ -224,7 +224,7 @@ a {
 
 .text_app {
     font-size: 1vw;
-    text-align: start;
+    text-align: center;
     width: 100%;
 }
 
@@ -448,37 +448,21 @@ a {
     display: none;
 }
 
-#Emerson {
-    background-image: url(/img/Emerson.jpeg) !important;
+#Manoel {
+    background-image: url(../img/Manoel.jpeg) !important;
 }
 
-#Ezequias {
-    background-image: url(/img/Ezequias.jpeg) !important;
-}
-
-#Felipe {
-    background-image: url(/img/Felipe.jpeg) !important;
-}
-
-#gabriel {
-    background-image: url(/img/gabriel.jpeg) !important;
-}
-
-#Johnatas {
-    background-image: url(/img/Johnatas.jpeg) !important;
-}
-
-#Leandro {
-    background-image: url(/img/Leandro.jpeg) !important;
-}
-
-#Reinaldo {
-    background-image: url(/img/Reinaldo.jpeg) !important;
+#Sandro {
+    background-image: url(../img/Sandro.jpeg) !important;
 }
 
 #Tamara {
-    background-image: url(/img/Tamara.jpeg) !important;
+    background-image: url(../img/Tamara.jpeg) !important;
 }
+#Andreia{
+    background-image:url(../img/Andreia.jpeg) !important;
+}
+
 
 .cadastro_binance {
     display: flex;
@@ -533,15 +517,11 @@ a {
 
 
 .div_btn_binance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.div_btn_binance button {
-    width: 345px;
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    flex-direction: row !important;
+    width: 70vw;
 }
 
 ::-webkit-scrollbar {
@@ -563,4 +543,21 @@ a {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
+#smartplayer#smartplayer#smartplayer .smartplayer-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+}
+
+
+.assistant_iframe{
+    display: none;
+}
+
+.assistant_iframe_desktop{
+    display: relative !important;
 }

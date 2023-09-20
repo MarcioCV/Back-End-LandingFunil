@@ -5,9 +5,10 @@
         {   
             unset($_SESSION['email']);
             unset($_SESSION['password']);
-            header('Location: ../html/login.php');
+            header('Location: ../php/efetuar_login.php');
         }
         $logado = $_SESSION['email'];
+
 ?>
 
 
@@ -87,12 +88,8 @@
             <div class="profile">
                 <a class="logout_" href="../php/sair.php">
                     <i class='bx bx-log-out' id="logout">
-
                     </i>
                 </a>
-
-
-
             </div>
         </div>
     </div>
@@ -103,9 +100,9 @@
             <span class="main">Seja Bem-Vindo a Renda Infinita</span>
             <div class="container">
                 <div class="main-text">
-                    Seu link de verificação é:
+                    Seu link de afiliado é:
                 </div>
-                <a class="links" href="<?="http://localhost/Back-End-LandingFunil/front-end/index.php?id=".$_SESSION["id"]?>">http://localhost/Back-End-LandingFunil/front-end/index.php?id=<?= $_SESSION["id"]?></a>
+                <a class="links" href="<?="http://infinitarenda.com.br/?id=".$_SESSION["id"]?>" target="_blank">http://infinitarenda.com.br/?id=<?= $_SESSION["id"]?></a>
             </div>
         </div>
     </div>

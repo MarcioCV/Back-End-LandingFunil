@@ -21,7 +21,7 @@ if(isset($_POST["password"])){
     $row = mysqli_fetch_array($getEmailQuery);
     $email = $row["email"];
 
-    $query = mysqli_query($con, "UPDATE user SET password='$passw' WHERE email ='$email'");
+    $query = mysqli_query($con, "UPDATE usuario SET password='$passw' WHERE email ='$email'");
 
     if($query){
         $query = mysqli_query($con, "DELETE FROM reset WHERE code = '$code' ");

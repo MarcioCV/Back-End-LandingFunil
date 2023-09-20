@@ -21,24 +21,22 @@ function toggleMenu(event) {
 function toggleVideo(i) {
   if (videos_div[i].style.display != "flex") {
     videos_div[i].style.display = "flex";
-    
+
     videos_div[i].classList.toggle('fade')
     setTimeout(() => {
       videos[i].play();
     }, 100);
 
-  }
-  else {
+  } else {
     videos_div[i].classList.toggle('fade')
-    
+
     setTimeout(() => {
       videos_div[i].style.display = "none";
-      
+
     }, 300);
     videos[i].pause();
   }
 }
-
 
 button_open[0].addEventListener('click', function () { toggleVideo(0) }, false)
 button_open[1].addEventListener('click', function () { toggleVideo(1) }, false)
@@ -66,7 +64,6 @@ button_close[5].addEventListener('click', function () { toggleVideo(5) }, false)
 button_close[6].addEventListener('click', function () { toggleVideo(6) }, false)
 button_close[7].addEventListener('click', function () { toggleVideo(7) }, false)
 
-
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
@@ -88,10 +85,9 @@ function myFunction() {
     element2[1].classList.add("carousel-item")
     element2[2].classList.add("carousel-item")
     element2[3].classList.add("carousel-item")
-  }
-  else {
-    if (element[0].classList.contains("carousel-item") == false){
-      
+  } else {
+    if (element[0].classList.contains("carousel-item") == false) {
+
       element[0].classList.add("carousel-item")
       element[1].classList.add("carousel-item")
       element[0].classList.add("active")
@@ -109,7 +105,10 @@ function myFunction() {
   }
 }
 
+console.log('videos_div:', videos_div.length);
+console.log('videos:', videos.length);
+console.log('button_open:', button_open.length);
+console.log('button_close:', button_close.length);
 
+window.onload = myFunction;
 window.addEventListener("resize", myFunction);
-
-window.onload(myFunction())

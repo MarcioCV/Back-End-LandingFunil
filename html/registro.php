@@ -21,26 +21,6 @@
 
 <body>
     <header id="header">
-        <div class="mynavbar">
-            <div class="nav-items">
-                <img src="../img/rendainfinitanovalogo.svg" id="logo">
-                <nav id="nav">
-                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                        aria-expanded="false">
-                        <span id="hamburger"></span>
-                    </button>
-                    <ul id="menu" role="menu">
-                        <li class="li_nav"><a href="#home" class="a_nav">HOME</a></li>
-                        <li class="li_nav"><a href="#robo" class="a_nav">VANTAGENS</a></li>
-                        <li class="li_nav"><a href="#depoimentos" class="a_nav">DEPOIMENTOS</a></li>
-                        <li class="li_nav"><a href="#faq" class="a_nav">FAQ</a></li>
-                        <li class="li_nav"><a href="#tutoriais" class="a_nav">TUTORIAIS</a></li>
-                        <li class="li_nav"><a href="#contatos" class="a_nav">CONTATOS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        </nav>
         <div class="general">
             <div class="container">
                 <div class="input_all">
@@ -48,7 +28,7 @@
                         <h1 class="h-1">Bem-vindo(a)à Renda Infinita </h1>
                         <p><label for="name">Nome completo</label></p>
                         <input class="form-control" type="text" name="name" required placeholder=" Stephen Watson">
-                        <p><label for="email">E-mail</label>
+                        <p><label for="email">Seu melhor E-mail</label>
                             <input class="form-control" type="email" name="email" required
                                 placeholder=" email@gmail.com">
                         <p><label for="phone">Celular e DDD (com WhastsApp)</label>
@@ -61,7 +41,7 @@
                                 placeholder=" ******************">
                         </p>
                         <div class="check-box">
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="" required>
                             <span>Eu li e aceito os <label class="termos">Termos de uso</label></span>
                         </div>
                             <?php
@@ -79,7 +59,7 @@
                     </form>
                 </div>
             </div>
-            <h5 class="h-5">Já tem cadastro?
+            <h5 class="h-5" style="margin-top:10px">Já tem cadastro?
                 <a href="../html/login.php"> Entrar </a>
             </h5>
         </div>
